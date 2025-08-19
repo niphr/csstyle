@@ -23,13 +23,13 @@ Creates a discrete fill scale for ggplot2 using predefined CSIDS color palettes.
 library(ggplot2)
 
 # Default primary fill scale
-ggplot(mtcars, aes(x = factor(cyl), fill = factor(cyl))) + 
-  geom_bar() + 
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(cyl))) +
+  geom_bar() +
   scale_fill_cs()
-  
+
 # Use posneg palette
-ggplot(mtcars, aes(x = factor(vs), fill = factor(vs))) + 
-  geom_bar() + 
+ggplot(mtcars, aes(x = factor(vs), fill = factor(vs))) +
+  geom_bar() +
   scale_fill_cs(palette = "posneg")
 }
 \seealso{

@@ -56,19 +56,19 @@ Custom ggplot2 theme following CSIDS visual guidelines with configurable grid li
 library(ggplot2)
 
 # Basic usage with default settings
-ggplot(mtcars, aes(x = mpg, y = hp)) + 
-  geom_point() + 
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
   theme_cs()
-  
+
 # With custom settings
-ggplot(mtcars, aes(x = mpg, y = hp)) + 
-  geom_point() + 
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
   theme_cs(legend_position = "bottom", x_axis_vertical = TRUE)
 library(ggplot2)
 
 # Add vertical x-axis labels to any plot
-ggplot(mtcars, aes(x = rownames(mtcars), y = mpg)) + 
-  geom_col() + 
+ggplot(mtcars, aes(x = rownames(mtcars), y = mpg)) +
+  geom_col() +
   set_x_axis_vertical()
 }
 \seealso{

@@ -23,13 +23,13 @@ Creates a discrete color scale for ggplot2 using predefined CSIDS color palettes
 library(ggplot2)
 
 # Default primary color scale
-ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) + 
-  geom_point() + 
+ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) +
+  geom_point() +
   scale_color_cs()
-  
+
 # Use warning palette
-ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) + 
-  geom_point() + 
+ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) +
+  geom_point() +
   scale_color_cs(palette = "warning")
 }
 \seealso{
