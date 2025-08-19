@@ -16,3 +16,4 @@ CLAUDE.md
 ^\.claude$
 ^\.\.Rcheck$
 ^.*\.DS_Store$
+^\.github$

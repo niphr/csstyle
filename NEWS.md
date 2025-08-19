@@ -1,3 +1,9 @@
+# Version 2025.8.19
+
+## Maintenance
+
+* Updated version for August 2025 release
+
 # Version 2025.1.31
 
 ## Major Features
