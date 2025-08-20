@@ -1,11 +1,6 @@
 Package: csstyle
 Title: Standardizing Outputs in the CSIDS Style
 Version: 2025.8.19
-Author: Richard Aubrey White [aut, cre] (<https://orcid.org/0000-0002-6747-1726>),
-  Celine Victoria Berg-Hansen [aut] (<https://orcid.org/0000-0002-0033-2019>),
-  Chi Zhang [aut],
-  CSIDS [cph]
-Maintainer: Richard Aubrey White <hello@rwhite.no>
 Authors@R: c(
   person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")), 
   person(c("Celine","Victoria"), "Berg-Hansen", role = c("aut"), comment = c(ORCID = "0000-0002-0033-2019")),
