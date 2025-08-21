@@ -1,5 +1,8 @@
 # csstyle <a href="https://www.csids.no/csstyle/"><img src="man/figures/logo.png" align="right" width="120" /></a>
 
+[![CRAN status](https://www.r-pkg.org/badges/version/csstyle)](https://cran.r-project.org/package=csstyle)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/csstyle)](https://cran.r-project.org/package=csstyle)
+
 ## Overview 
 
 [csstyle](https://www.csids.no/csstyle/) is a comprehensive styling system for consistent visual outputs using CSIDS guidelines. It provides ggplot2 themes, color palettes, and dual formatting functions to standardize graphs, tables, and reports.
@@ -24,23 +27,17 @@ Run `help(package="csstyle")` for more information.
 
 The [csverse](https://www.csids.no/packages.html) is a set of R packages developed to help solve problems that frequently occur when performing disease surveillance.
 
-If you want to install the dev versions (or access packages that haven't been released on CRAN), run `usethis::edit_r_profile()` to edit your `.Rprofile`. 
-
-Then write in:
-
 ```
-options(
-  repos = structure(c(
-    CSVERSE = "https://www.csids.no/drat/",
-    CRAN    = "https://cran.rstudio.com"
-  ))
-)
-```
-
-Save the file and restart R.
-
-You can now install [csverse](https://www.csids.no/packages.html) packages from our [drat repository](https://www.csids.no/drat/).
-
-```
+install.packages("attrib")
+install.packages("cs9")
+install.packages("csalert")
+install.packages("csdata")
+install.packages("csdb")
+install.packages("csmaps")
 install.packages("csstyle")
+install.packages("cstidy")
+install.packages("cstime")
+install.packages("csutil")
+install.packages("org")
+install.packages("plnr")
 ```
