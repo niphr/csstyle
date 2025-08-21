@@ -1,14 +1,14 @@
 Package: csstyle
-Title: Standardizing Outputs in the CSIDS Style
-Version: 2025.8.19
+Title: Standardizing Outputs in the 'CSIDS' Style
+Version: 2025.8.21
 Authors@R: c(
   person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")), 
   person(c("Celine","Victoria"), "Berg-Hansen", role = c("aut"), comment = c(ORCID = "0000-0002-0033-2019")),
   person(c("Chi"), "Zhang", email = "andreachizhang@yahoo.com", role = c("aut")),
   person("CSIDS", email = "hello@csids.no", role = c("cph"))
   )
-Description: A comprehensive styling system for consistent visual outputs using CSIDS guidelines. 
-    Provides ggplot2 themes, color palettes, and dual formatting functions to standardize 
+Description: A comprehensive styling system for consistent visual outputs using 'CSIDS' guidelines. 
+    Provides 'ggplot2' themes, color palettes, and dual formatting functions to standardize 
     graphs, tables, and reports. Includes Norwegian formatting conventions for domestic 
     use and international journal standards for academic publications. Features number 
     formatting (percentages, per-100k rates, log transformations), date formatting 

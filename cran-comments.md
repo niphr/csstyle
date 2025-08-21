@@ -1,4 +1,4 @@
-## New submission
+## Resubmission
 
 This is a new package submission to CRAN.
 
@@ -10,18 +10,16 @@ This is a new package submission to CRAN.
 
 ## R CMD check results
 
-0 errors | 0 warnings | 2 notes
+0 errors | 0 warnings | 1 notes
 
-The 2 NOTEs are:
+The 1 NOTEs are:
 
 1. "New submission" - Standard for new CRAN submissions
-
-2. Possibly misspelled words in DESCRIPTION: CSIDS (2:37, 15:81), ggplot (16:14)
-
-These are not misspelled words.
 
 ## Downstream dependencies
 
 None currently. This is a new submission to CRAN.
 
 ## Additional notes
+
+We have now put ggplot2 and CSIDS in quotation marks as requested. We do not have reference about the methods used here.
