@@ -13,6 +13,6 @@
     "csstyle ",
     version,
     "\n",
-    "https://www.csids.no/csstyle/"
+    "https://niphr.github.io/csstyle/"
   ))
 }

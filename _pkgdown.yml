@@ -1,7 +1,4 @@
-url: https://www.csids.no/csstyle/
-
-template:
-  package: csidstemplatepkgdown
+url: https://niphr.github.io/csstyle/
 
 reference:
 - title: Visualization
@@ -76,3 +73,14 @@ reference:
   - print.github_code
   - view_html
   - set_global
+
+authors:
+  footer:
+    roles: [cre, aut]
+    text: "Crafted by"
+  sidebar:
+    roles: [cre, aut, cph]
+  before: "This package is proudly brought to you by:"
+  after: "See the [changelog](news/index.html) for other contributors. :pray:"
+  Richard Aubrey White:
+    href: "https://www.rwhite.no"
