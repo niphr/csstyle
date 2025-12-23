@@ -4,110 +4,93 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Introduction to csstyle • csstyle</title>
-<!-- favicons --><link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
-<link rel="icon" type="”image/svg+xml”" href="../favicon.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="icon" sizes="any" href="../favicon.ico">
-<link rel="manifest" href="../site.webmanifest">
-<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Source_Sans_Pro-0.4.10/font.css" rel="stylesheet">
-<link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
-<link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to csstyle">
-<script data-goatcounter="https://csidsno.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to csstyle">
+<!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
-<body>
-    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+<body data-spy="scroll" data-target="#toc">
 
 
-    <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
-    <a href="https://www.csids.no" class="external-link"><img src="https://www.csids.no/resources/logo/logo_full_white.svg" id="csidslogo"></a>
-    <a class="navbar-brand me-2" href="../index.html">csstyle</a>
+    <div class="container template-article">
+      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">csstyle</a>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2025.8.21</span>
+      </span>
+    </div>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2025.8.21</small>
-
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto">
-<li class="active nav-item"><a class="nav-link" href="../articles/csstyle.html">Get started</a></li>
-<li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
-<li class="nav-item"><a class="nav-link" href="../news/index.html">News</a></li>
-<li class="nav-item"><form class="form-inline" role="search">
- <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
-</form></li>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+<li>
+  <a href="../articles/csstyle.html">Get started</a>
+</li>
+<li>
+  <a href="../reference/index.html">Reference</a>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
-<ul class="navbar-nav">
-<li class="nav-item"><a class="external-link nav-link" href="https://www.csids.no/">Home</a></li>
-<li class="nav-item dropdown">
-  <button class="nav-link dropdown-toggle" type="button" id="dropdown-packages" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Packages</button>
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-packages">
-<li><a class="external-link dropdown-item" href="https://www.csids.no/packages.html">Introduction</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Analysis planning</h6></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/org/">org</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/plnr/">plnr</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/cs9/">cs9</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Helper functions</h6></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/csdb/">csdb</a></li>
-    <li><a class="dropdown-item" href="https://www.csids.no/csstyle/">csstyle</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/cstidy/">cstidy</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/cstime/">cstime</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/csutil/">csutil</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Surveillance</h6></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/attrib/">attrib</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/csalert/">csalert</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><h6 class="dropdown-header" data-toc-skip>Structural data</h6></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/csdata/">csdata</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/csmaps/">csmaps</a></li>
-  </ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="https://github.com/niphr/csstyle/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
+
+  </a>
 </li>
-<li class="nav-item dropdown">
-  <button class="nav-link dropdown-toggle" type="button" id="dropdown-about" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">About</button>
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-about">
-<li><a class="external-link dropdown-item" href="https://www.csids.no/about.html">About CSIDS</a></li>
-    <li><a class="external-link dropdown-item" href="https://www.csids.no/get_involved.html">Get involved</a></li>
-  </ul>
-</li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/csids/csstyle/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
-
-
+<!--/.nav-collapse -->
   </div>
-</nav><div class="container template-article">
+<!--/.container -->
+</div>
+<!--/.navbar -->
 
 
 
-<script src="csstyle_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
-  <main id="main" class="col-md-9"><div class="page-header">
-      <img src="../logo.png" class="logo" alt=""><h1>Introduction to csstyle</h1>
+      </header><div class="row">
+  <div class="col-md-9 contents">
+    <div class="page-header toc-ignore">
+      <h1 data-toc-skip>Introduction to csstyle</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/csids/csstyle/blob/HEAD/vignettes/csstyle.Rmd" class="external-link"><code>vignettes/csstyle.Rmd</code></a></small>
-      <div class="d-none name"><code>csstyle.Rmd</code></div>
+      <small class="dont-index">Source: <a href="https://github.com/niphr/csstyle/blob/main/vignettes/csstyle.Rmd" class="external-link"><code>vignettes/csstyle.Rmd</code></a></small>
+      <div class="hidden name"><code>csstyle.Rmd</code></div>
+
     </div>
 
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.csids.no/csstyle/">csstyle</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://niphr.github.io/csstyle/">csstyle</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; csstyle 2025.8.21</span></span>
-<span><span class="co">#&gt; https://www.csids.no/csstyle/</span></span>
+<span><span class="co">#&gt; https://niphr.github.io/csstyle/</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p>The <code>csstyle</code> package provides a system for standardizing outputs such as graphs, tables, and reports using CSIDS visual guidelines. Rather than offering infinite customization options, <code>csstyle</code> focuses on producing a limited set of outputs that consistently look the same.</p>
+<p>The <code>csstyle</code> package provides a system for standardizing
+outputs such as graphs, tables, and reports using CSIDS visual
+guidelines. Rather than offering infinite customization options,
+<code>csstyle</code> focuses on producing a limited set of outputs that
+consistently look the same.</p>
 </div>
 <div class="section level2">
 <h2 id="key-features">Key Features<a class="anchor" aria-label="anchor" href="#key-features"></a>
@@ -116,7 +99,8 @@
 <li>
 <strong>Consistent ggplot2 themes</strong> with CSIDS styling</li>
 <li>
-<strong>Predefined color palettes</strong> for professional visualizations<br>
+<strong>Predefined color palettes</strong> for professional
+visualizations<br>
 </li>
 <li>
 <strong>Norwegian number formatting</strong> conventions</li>
@@ -127,7 +111,8 @@
 <div class="section level2">
 <h2 id="using-csids-themes">Using CSIDS Themes<a class="anchor" aria-label="anchor" href="#using-csids-themes"></a>
 </h2>
-<p>The main theme function <code><a href="../reference/theme.html">theme_cs()</a></code> provides a clean, professional appearance:</p>
+<p>The main theme function <code><a href="../reference/theme.html">theme_cs()</a></code> provides a clean,
+professional appearance:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Basic scatter plot with CSIDS theme</span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mtcars</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">mpg</span>, y <span class="op">=</span> <span class="va">hp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -138,7 +123,7 @@
 <span>    x <span class="op">=</span> <span class="st">"Miles per Gallon"</span>,</span>
 <span>    y <span class="op">=</span> <span class="st">"Horsepower"</span></span>
 <span>  <span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/theme-example-1.png" width="700"></p>
+<p><img src="csstyle_files/figure-html/theme-example-1.png" class="r-plt" alt="" width="700"></p>
 <p>You can customize the theme with various options:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Theme with bottom legend and vertical x-axis labels</span></span>
@@ -146,7 +131,7 @@
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html" class="external-link">geom_boxplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="../reference/theme.html">theme_cs</a></span><span class="op">(</span>legend_position <span class="op">=</span> <span class="st">"bottom"</span>, x_axis_vertical <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"MPG by Number of Cylinders"</span>, fill <span class="op">=</span> <span class="st">"Cylinders"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/theme-custom-1.png" width="700"></p>
+<p><img src="csstyle_files/figure-html/theme-custom-1.png" class="r-plt" alt="" width="700"></p>
 </div>
 <div class="section level2">
 <h2 id="color-palettes">Color Palettes<a class="anchor" aria-label="anchor" href="#color-palettes"></a>
@@ -159,8 +144,15 @@
 <span><span class="co">#&gt; "#393C61" "#0975B5" "#2EA1C0" "#709900" "#B11643" "#FC5F56"</span></span>
 <span></span>
 <span><span class="co"># Display all palettes</span></span>
-<span><span class="fu"><a href="../reference/display_all_palettes.html">display_all_palettes</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/colors-1.png" width="700"></p>
+<span><span class="fu"><a href="../reference/display_all_palettes.html">display_all_palettes</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.</span></span>
+<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Please use `linewidth` instead.</span></span>
+<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> The deprecated feature was likely used in the <span style="color: #0000BB;">csstyle</span> package.</span></span>
+<span><span class="co">#&gt;   Please report the issue at <span style="color: #0000BB; font-style: italic;">&lt;https://github.com/niphr/csstyle/issues&gt;</span>.</span></span>
+<span><span class="co">#&gt; <span style="color: #555555;">This warning is displayed once every 8 hours.</span></span></span>
+<span><span class="co">#&gt; <span style="color: #555555;">Call `lifecycle::last_lifecycle_warnings()` to see where this warning was</span></span></span>
+<span><span class="co">#&gt; <span style="color: #555555;">generated.</span></span></span></code></pre></div>
+<p><img src="csstyle_files/figure-html/colors-1.png" class="r-plt" alt="" width="700"></p>
 <p>Use the color scales in your plots:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Using the primary color palette</span></span>
@@ -169,7 +161,7 @@
 <span>  <span class="fu"><a href="../reference/scale_color_cs.html">scale_color_cs</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"primary"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="../reference/theme.html">theme_cs</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"Cylinders"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/color-scales-1.png" width="700"></p>
+<p><img src="csstyle_files/figure-html/color-scales-1.png" class="r-plt" alt="" width="700"></p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Using the warning palette for fills</span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mtcars</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">cyl</span><span class="op">)</span>, fill <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">cyl</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -177,7 +169,7 @@
 <span>  <span class="fu"><a href="../reference/scale_fill_cs.html">scale_fill_cs</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"warning"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="../reference/theme.html">theme_cs</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Car Count by Cylinders"</span>, fill <span class="op">=</span> <span class="st">"Cylinders"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/fill-scales-1.png" width="700"></p>
+<p><img src="csstyle_files/figure-html/fill-scales-1.png" class="r-plt" alt="" width="700"></p>
 </div>
 <div class="section level2">
 <h2 id="number-formatting">Number Formatting<a class="anchor" aria-label="anchor" href="#number-formatting"></a>
@@ -212,7 +204,7 @@
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Current date</span></span>
 <span><span class="fu"><a href="../reference/format_date.html">format_date_as_nor</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "21.08.2025"</span></span>
+<span><span class="co">#&gt; [1] "23.12.2025"</span></span>
 <span></span>
 <span><span class="co"># Specific dates</span></span>
 <span><span class="va">test_date</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2023-12-25"</span><span class="op">)</span></span>
@@ -231,7 +223,9 @@
 <div class="section level2">
 <h2 id="journal-formatting">Journal Formatting<a class="anchor" aria-label="anchor" href="#journal-formatting"></a>
 </h2>
-<p>For academic publications, the package also provides journal formatting functions that use international conventions (comma thousands separator, decimal point, ISO 8601 dates):</p>
+<p>For academic publications, the package also provides journal
+formatting functions that use international conventions (comma thousands
+separator, decimal point, ISO 8601 dates):</p>
 <div class="section level3">
 <h3 id="number-formatting-comparison">Number Formatting Comparison<a class="anchor" aria-label="anchor" href="#number-formatting-comparison"></a>
 </h3>
@@ -289,7 +283,8 @@
 <div class="section level3">
 <h3 id="log-scale-transformations">Log Scale Transformations<a class="anchor" aria-label="anchor" href="#log-scale-transformations"></a>
 </h3>
-<p>Both Norwegian and journal formats support inverse log transformations:</p>
+<p>Both Norwegian and journal formats support inverse log
+transformations:</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">log_values</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span></span>
 <span></span>
@@ -310,13 +305,14 @@
 <div class="section level3">
 <h3 id="pretty-breaks">Pretty Breaks<a class="anchor" aria-label="anchor" href="#pretty-breaks"></a>
 </h3>
-<p>Use <code><a href="../reference/pretty_breaks.html">pretty_breaks()</a></code> for nicely formatted axis breaks:</p>
+<p>Use <code><a href="../reference/pretty_breaks.html">pretty_breaks()</a></code> for nicely formatted axis
+breaks:</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mtcars</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">mpg</span>, y <span class="op">=</span> <span class="va">hp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_y_continuous</a></span><span class="op">(</span>breaks <span class="op">=</span> <span class="fu"><a href="../reference/pretty_breaks.html">pretty_breaks</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="../reference/theme.html">theme_cs</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/pretty-breaks-1.png" width="700"></p>
+<p><img src="csstyle_files/figure-html/pretty-breaks-1.png" class="r-plt" alt="" width="700"></p>
 </div>
 <div class="section level3">
 <h3 id="every-nth">Every Nth<a class="anchor" aria-label="anchor" href="#every-nth"></a>
@@ -328,38 +324,54 @@
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_discrete.html" class="external-link">scale_x_discrete</a></span><span class="op">(</span>breaks <span class="op">=</span> <span class="fu"><a href="../reference/every_nth.html">every_nth</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="../reference/theme.html">theme_cs</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="../reference/theme.html">set_x_axis_vertical</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="csstyle_files/figure-html/every-nth-1.png" width="700"></p>
+<p><img src="csstyle_files/figure-html/every-nth-1.png" class="r-plt" alt="" width="700"></p>
 </div>
 </div>
 <div class="section level2">
 <h2 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>
 </h2>
-<p>The <code>csstyle</code> package provides a comprehensive set of tools for creating consistent, professional visualizations that follow both Norwegian (CSIDS) and international journal standards. The dual formatting approach ensures that:</p>
+<p>The <code>csstyle</code> package provides a comprehensive set of
+tools for creating consistent, professional visualizations that follow
+both Norwegian (CSIDS) and international journal standards. The dual
+formatting approach ensures that:</p>
 <ul>
 <li>
-<strong>Norwegian functions</strong> (<code>*_as_nor</code>) follow local conventions for domestic reports and presentations</li>
+<strong>Norwegian functions</strong> (<code>*_as_nor</code>) follow
+local conventions for domestic reports and presentations</li>
 <li>
-<strong>Journal functions</strong> (<code>*_as_journal</code>) follow international standards for academic publications</li>
+<strong>Journal functions</strong> (<code>*_as_journal</code>)
+follow international standards for academic publications</li>
 </ul>
-<p>By providing both options while limiting excessive customization, the package ensures consistent output formatting across different publication contexts.</p>
-<p>For more detailed examples and function documentation, use <code><a href="https://www.csids.no/csstyle/reference">help(package = "csstyle")</a></code> or refer to individual function help pages.</p>
+<p>By providing both options while limiting excessive customization, the
+package ensures consistent output formatting across different
+publication contexts.</p>
+<p>For more detailed examples and function documentation, use
+<code><a href="https://www.csids.no/csstyle/reference" class="external-link">help(package = "csstyle")</a></code> or refer to individual function
+help pages.</p>
 </div>
-  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
-    </nav></aside>
-</div>
+  </div>
 
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
+      </div>
 
-    <footer><div class="pkgdown-footer-left">
-  <p><a href="https://www.csids.no" class="external-link"><img src="https://www.csids.no/resources/logo/logo_full_blue.svg" width="200"></a></p>
-</div>
-
-<div class="pkgdown-footer-right">
-  <p>Crafted by <a href="https://www.rwhite.no" class="external-link">Richard Aubrey White</a>, Celine Victoria Berg-Hansen, <a href="https://andreaczhang.github.io" class="external-link">Chi Zhang</a>.</p>
 </div>
 
-    </footer>
+
+
+      <footer><div class="copyright">
+  <p></p>
+<p>Crafted by <a href="https://www.rwhite.no" class="external-link">Richard Aubrey White</a>, Celine Victoria Berg-Hansen, Chi Zhang.</p>
 </div>
+
+<div class="pkgdown">
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+</div>
+
+      </footer>
+</div>
+
 
 
 
