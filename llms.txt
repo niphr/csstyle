@@ -1,0 +1,159 @@
+# csstyle
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/csstyle)](https://cran.r-project.org/package=csstyle)
+[![CRAN
+downloads](https://cranlogs.r-pkg.org/badges/csstyle)](https://cran.r-project.org/package=csstyle)
+
+## Overview
+
+[csstyle](https://niphr.github.io/csstyle/) is a comprehensive styling
+system for consistent visual outputs using CSIDS guidelines. It provides
+ggplot2 themes, color palettes, and dual formatting functions to
+standardize graphs, tables, and reports.
+
+**Key Features:**
+
+- **ggplot2 themes** with CSIDS styling and configurable options
+- **Color palettes** with hierarchical system (primary, warning, posneg)
+- **Dual formatting system**:
+  - **Norwegian formatting** for domestic reports (comma decimal, space
+    thousands, “IK” for missing)
+  - **Journal formatting** for academic publications (decimal point,
+    comma thousands, “NA” for missing)
+- **Number formatting** for percentages, per-100k rates, and log
+  transformations
+- **Date formatting** with Norwegian conventions vs ISO 8601 standards
+
+The package focuses on consistency over flexibility to ensure
+reproducible, professional outputs across different research contexts.
+
+Run
+[`help(package="csstyle")`](https://niphr.github.io/csstyle/reference)
+for more information.
+
+# Package index
+
+## Visualization
+
+### Themes and styling
+
+- [`theme_cs()`](https://niphr.github.io/csstyle/reference/theme.md)
+  [`set_x_axis_vertical()`](https://niphr.github.io/csstyle/reference/theme.md)
+  : CSIDS ggplot2 theme for consistent styling
+
+### Colors and palettes
+
+- [`scale_color_cs()`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
+  : ggplot2 color scale using CSIDS color palettes
+- [`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md)
+  : ggplot2 fill scale using CSIDS color palettes
+- [`colors`](https://niphr.github.io/csstyle/reference/colors.md) :
+  Color palette definitions for CSIDS styling
+- [`display_all_palettes()`](https://niphr.github.io/csstyle/reference/display_all_palettes.md)
+  : Display all available color palettes
+
+### Plot utilities
+
+- [`pretty_breaks()`](https://niphr.github.io/csstyle/reference/pretty_breaks.md)
+  : Pretty breaks
+- [`every_nth()`](https://niphr.github.io/csstyle/reference/every_nth.md)
+  : Returns every nth discrete value
+- [`save_a4()`](https://niphr.github.io/csstyle/reference/save_a4.md) :
+  Save ggplot in A4 scale
+
+## Norwegian formatting
+
+### Numbers
+
+- [`format_num_as_nor_num_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
+  [`format_num_as_nor_num_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
+  [`format_num_as_nor_num_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
+  : Format numbers with Norwegian conventions (0 digits)
+- [`format_num_as_nor_perc_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_perc.md)
+  [`format_num_as_nor_perc_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_perc.md)
+  [`format_num_as_nor_perc_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_perc.md)
+  : Format numbers as percentages with Norwegian conventions (0 digits)
+- [`format_num_as_nor_per100k_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_per100k.md)
+  [`format_num_as_nor_per100k_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_per100k.md)
+  [`format_num_as_nor_per100k_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_per100k.md)
+  : Format numbers per 100k with Norwegian conventions (0 digits)
+- [`format_num_as_nor_invlog2_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog2.md)
+  [`format_num_as_nor_invlog2_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog2.md)
+  : Format numbers on inverse log-2 scale with Norwegian conventions (1
+  digit)
+- [`format_num_as_nor_invlog10_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog10.md)
+  [`format_num_as_nor_invlog10_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog10.md)
+  : Format numbers on inverse log-10 scale with Norwegian conventions (1
+  digit)
+- [`format_num_as_nor_invloge_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invloge.md)
+  [`format_num_as_nor_invloge_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invloge.md)
+  : Format numbers on inverse natural log scale with Norwegian
+  conventions (1 digit)
+- [`format_cstidy_age_as_factor()`](https://niphr.github.io/csstyle/reference/format_cstidy_age_as.md)
+  [`format_cstidy_age_as_character()`](https://niphr.github.io/csstyle/reference/format_cstidy_age_as.md)
+  : Format cstidy age codes as factor with Norwegian text
+- [`format_location_code_as_factor()`](https://niphr.github.io/csstyle/reference/format_location_code_as.md)
+  [`format_location_code_as_character()`](https://niphr.github.io/csstyle/reference/format_location_code_as.md)
+  : Convert Norwegian location codes to factor with readable labels
+
+### Dates and times
+
+- [`format_date_as_nor()`](https://niphr.github.io/csstyle/reference/format_date.md)
+  [`format_datetime_as_nor()`](https://niphr.github.io/csstyle/reference/format_date.md)
+  [`format_datetime_as_file()`](https://niphr.github.io/csstyle/reference/format_date.md)
+  : Format date and datetime using Norwegian conventions
+
+## Journal formatting (international standards)
+
+### Numbers
+
+- [`format_num_as_journal_num_0()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_num.md)
+  [`format_num_as_journal_num_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_num.md)
+  [`format_num_as_journal_num_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_num.md)
+  : Format numbers with journal conventions (0 digits)
+- [`format_num_as_journal_perc_0()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_perc.md)
+  [`format_num_as_journal_perc_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_perc.md)
+  [`format_num_as_journal_perc_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_perc.md)
+  : Format numbers as percentages with journal conventions (0 digits)
+- [`format_num_as_journal_per100k_0()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_per100k.md)
+  [`format_num_as_journal_per100k_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_per100k.md)
+  [`format_num_as_journal_per100k_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_per100k.md)
+  : Format numbers per 100k with journal conventions (0 digits)
+- [`format_num_as_journal_invlog2_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog2.md)
+  [`format_num_as_journal_invlog2_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog2.md)
+  : Format numbers on inverse log-2 scale with journal conventions (1
+  digit)
+- [`format_num_as_journal_invlog10_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog10.md)
+  [`format_num_as_journal_invlog10_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog10.md)
+  : Format numbers on inverse log-10 scale with journal conventions (1
+  digit)
+- [`format_num_as_journal_invloge_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invloge.md)
+  [`format_num_as_journal_invloge_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invloge.md)
+  : Format numbers on inverse natural log scale with journal conventions
+  (1 digit)
+
+### Dates and times
+
+- [`format_date_as_journal()`](https://niphr.github.io/csstyle/reference/format_date_as_journal.md)
+  [`format_datetime_as_journal()`](https://niphr.github.io/csstyle/reference/format_date_as_journal.md)
+  [`format_datetime_as_journal_file()`](https://niphr.github.io/csstyle/reference/format_date_as_journal.md)
+  : Format date and datetime using journal conventions (ISO 8601)
+
+## Development utilities
+
+- [`as_github_code()`](https://niphr.github.io/csstyle/reference/as_github_code.md)
+  : An easy way to print github code
+- [`print(`*`<github_code>`*`)`](https://niphr.github.io/csstyle/reference/print.github_code.md)
+  : Print github_code
+- [`view_html()`](https://niphr.github.io/csstyle/reference/view_html.md)
+  : View HTML in the RStudio viewer
+- [`set_global()`](https://niphr.github.io/csstyle/reference/set_global.md)
+  : Set global configuration parameters for location code formatting
+
+# Articles
+
+### All vignettes
+
+- [Introduction to
+  csstyle](https://niphr.github.io/csstyle/articles/csstyle.md):
