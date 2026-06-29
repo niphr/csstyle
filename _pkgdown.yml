@@ -1,5 +1,8 @@
 url: https://niphr.github.io/csstyle/
 
+template:
+  package: cstemplate
+
 reference:
 - title: Visualization
 - subtitle: Themes and styling

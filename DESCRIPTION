@@ -31,3 +31,4 @@ Suggests: testthat,
     lubridate
 RoxygenNote: 7.3.2
 VignetteBuilder: knitr
+Config/Needs/website: niphr/cstemplate
