@@ -1,10 +1,3 @@
-# csstyle
-
-[![CRAN
-status](https://www.r-pkg.org/badges/version/csstyle)](https://cran.r-project.org/package=csstyle)
-[![CRAN
-downloads](https://cranlogs.r-pkg.org/badges/csstyle)](https://cran.r-project.org/package=csstyle)
-
 ## Overview
 
 [csstyle](https://niphr.github.io/csstyle/) is a comprehensive styling

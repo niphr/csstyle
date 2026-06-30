@@ -134,7 +134,7 @@ Format dates using Norwegian conventions:
 ``` r
 # Current date
 format_date_as_nor()
-#> [1] "29.06.2026"
+#> [1] "30.06.2026"
 
 # Specific dates
 test_date <- as.Date("2023-12-25")
