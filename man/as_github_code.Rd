@@ -2,23 +2,36 @@
 % Please edit documentation in R/github_code.R
 \name{as_github_code}
 \alias{as_github_code}
-\title{An easy way to print github code}
+\title{Create a github_code object from a GitHub URL}
 \usage{
 as_github_code(url)
 }
 \arguments{
-\item{url}{URL from github}
+\item{url}{Character string. A GitHub URL to a file, either a "blob" URL
+(e.g. \code{https://github.com/owner/repo/blob/main/file.R}) or the
+corresponding raw URL.}
 }
 \value{
-Class github_code
+An object of class \code{github_code}: a character vector of the
+  file's lines with a \code{pretty_url} attribute.
 }
 \description{
-An easy way to print github code
+Reads the lines of a file on GitHub and returns them as a
+  \code{github_code} object. A "blob" URL is rewritten to the corresponding
+  raw URL before the file is read. The object can be printed with line
+  numbers and an optional link back to GitHub (see
+  \code{\link{print.github_code}}).
+}
+\details{
+Create a github_code object from a GitHub URL
 }
 \examples{
 \dontrun{
-# Example usage (requires internet connection)
+# Requires an internet connection
 x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
 print(x, lines = 1:3)
 }
+}
+\seealso{
+\code{\link{print.github_code}}
 }

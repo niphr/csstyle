@@ -47,10 +47,13 @@ set_x_axis_vertical()
 \value{
 Complete ggplot2 theme object
 
-ggplot2 theme component
+A ggplot2 theme component that can be added to a plot.
 }
 \description{
 Custom ggplot2 theme following Core Surveillance visual guidelines with configurable grid lines and formatting.
+
+Returns a ggplot2 theme component that rotates the x-axis tick
+  labels to be vertical. Add it to a plot like any other theme element.
 }
 \examples{
 library(ggplot2)

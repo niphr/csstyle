@@ -1,12 +1,23 @@
-#' An easy way to print github code
-#' @param url URL from github
+#' Create a github_code object from a GitHub URL
+#'
+#' @title Create a github_code object from a GitHub URL
+#' @description Reads the lines of a file on GitHub and returns them as a
+#'   \code{github_code} object. A "blob" URL is rewritten to the corresponding
+#'   raw URL before the file is read. The object can be printed with line
+#'   numbers and an optional link back to GitHub (see
+#'   \code{\link{print.github_code}}).
+#' @param url Character string. A GitHub URL to a file, either a "blob" URL
+#'   (e.g. \code{https://github.com/owner/repo/blob/main/file.R}) or the
+#'   corresponding raw URL.
+#' @returns An object of class \code{github_code}: a character vector of the
+#'   file's lines with a \code{pretty_url} attribute.
 #' @examples
 #' \dontrun{
-#' # Example usage (requires internet connection)
+#' # Requires an internet connection
 #' x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
 #' print(x, lines = 1:3)
 #' }
-#' @returns Class github_code
+#' @seealso \code{\link{print.github_code}}
 #' @export
 as_github_code <- function(url){
   if(stringr::str_detect(url, "^https://github.com/") | stringr::str_detect(url, "^https://www.github.com/")){
@@ -25,10 +36,27 @@ as_github_code <- function(url){
   x
 }
 
-#' Print github_code
-#' @param x an object
-#' @param ... Further arguments
-#' @returns x as invisible.
+#' Print a github_code object
+#'
+#' @title Print a github_code object
+#' @description Prints the lines of a \code{github_code} object with line
+#'   numbers. Use the \code{lines} argument to print a subset of lines, and
+#'   \code{include_url} or \code{include_url_as_link} to also print a link back
+#'   to the file on GitHub.
+#' @param x A \code{github_code} object, as created by
+#'   \code{\link{as_github_code}}.
+#' @param ... Further arguments controlling the output: \code{lines} (integer
+#'   vector of line numbers to print), \code{include_url} (logical; print the
+#'   GitHub link), and \code{include_url_as_link} (logical; print the link as
+#'   HTML).
+#' @returns The input \code{x}, invisibly.
+#' @examples
+#' \dontrun{
+#' # Requires an internet connection
+#' x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
+#' print(x, lines = 1:3, include_url = TRUE)
+#' }
+#' @seealso \code{\link{as_github_code}}
 #' @export
 print.github_code <- function(x, ...){
   dots <- list(...)

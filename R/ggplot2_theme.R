@@ -122,9 +122,12 @@ theme_cs <- function(
   return(retval)
 }
 
-#' Sets the x axis to be vertical
+#' Set the x-axis text to be vertical
+#'
+#' @description Returns a ggplot2 theme component that rotates the x-axis tick
+#'   labels to be vertical. Add it to a plot like any other theme element.
 #' @import ggplot2
-#' @returns ggplot2 theme component
+#' @returns A ggplot2 theme component that can be added to a plot.
 #' @examples
 #' library(ggplot2)
 #'

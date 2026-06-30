@@ -2,18 +2,38 @@
 % Please edit documentation in R/github_code.R
 \name{print.github_code}
 \alias{print.github_code}
-\title{Print github_code}
+\title{Print a github_code object}
 \usage{
 \method{print}{github_code}(x, ...)
 }
 \arguments{
-\item{x}{an object}
+\item{x}{A \code{github_code} object, as created by
+\code{\link{as_github_code}}.}
 
-\item{...}{Further arguments}
+\item{...}{Further arguments controlling the output: \code{lines} (integer
+vector of line numbers to print), \code{include_url} (logical; print the
+GitHub link), and \code{include_url_as_link} (logical; print the link as
+HTML).}
 }
 \value{
-x as invisible.
+The input \code{x}, invisibly.
 }
 \description{
-Print github_code
+Prints the lines of a \code{github_code} object with line
+  numbers. Use the \code{lines} argument to print a subset of lines, and
+  \code{include_url} or \code{include_url_as_link} to also print a link back
+  to the file on GitHub.
+}
+\details{
+Print a github_code object
+}
+\examples{
+\dontrun{
+# Requires an internet connection
+x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
+print(x, lines = 1:3, include_url = TRUE)
+}
+}
+\seealso{
+\code{\link{as_github_code}}
 }

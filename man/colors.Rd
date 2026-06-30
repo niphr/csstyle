@@ -2,15 +2,28 @@
 % Please edit documentation in R/1_environments.r
 \name{colors}
 \alias{colors}
-\title{Color palette definitions for Core Surveillance styling}
+\title{Color definitions for Core Surveillance styling}
+\format{
+A list with the following elements:
+\describe{
+  \item{named_colors}{Named character vector of hex codes "H1" to "H12".}
+  \item{base}{The base color (element "H1" of \code{named_colors}).}
+  \item{palettes}{Named list of palettes. The \code{primary} palettes have
+    1 to 12 levels (\code{primary_1} to \code{primary_12}); \code{warning_3}
+    has 3 levels; \code{posneg_1} and \code{posneg_2} have 1 and 2 levels.}
+  \item{palette_names}{Character vector of the palette family names
+    ("primary", "posneg", "warning").}
+}
+}
 \usage{
 colors
 }
 \value{
-List with color definitions including named_colors, base color, and palettes
+A list. See the Format section for the elements.
 }
 \description{
-A list containing named colors, base colors, and predefined color palettes for consistent visualization styling.
+A list holding the named colors, the base color, and the
+  predefined color palettes used by the Core Surveillance styling functions.
 }
 \examples{
 # Access named colors

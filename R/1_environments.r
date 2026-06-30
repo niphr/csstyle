@@ -2,12 +2,20 @@ global <- new.env()
 global$location_code_to_factor_label <- "location_name"
 global$location_code_to_factor_label_if_not_unique <- "location_name_description_nb"
 
-#' Set global configuration parameters for location code formatting
-#' 
-#' @description This function sets global parameters that control how location codes are formatted throughout the package.
-#' @param location_code_to_factor_label Column name to use for location labels (default: "location_name")
-#' @param location_code_to_factor_label_if_not_unique Column name to use when location names are not unique (default: "location_name_description_nb")
-#' @returns NULL (invisibly) - function called for side effects
+#' Set global configuration for location code formatting
+#'
+#' @description Sets the global defaults that control how location codes are
+#'   turned into labels by \code{\link{format_location_code_as_factor}} and
+#'   \code{\link{format_location_code_as_character}}. These defaults are used
+#'   whenever those functions are called without an explicit \code{label} or
+#'   \code{label_if_not_unique}.
+#' @param location_code_to_factor_label Column name in the reference data to use
+#'   for location labels (default: "location_name").
+#' @param location_code_to_factor_label_if_not_unique Column name in the
+#'   reference data to use when the chosen labels are not unique
+#'   (default: "location_name_description_nb").
+#' @returns Called for its side effect of updating the global configuration.
+#'   Returns the assigned value invisibly.
 #' @examples
 #' # Set global location formatting preferences
 #' set_global(
@@ -27,17 +35,28 @@ set_global <- function(
   global$location_code_to_factor_label_if_not_unique <- location_code_to_factor_label_if_not_unique
 }
 
-#' Color palette definitions for Core Surveillance styling
-#' 
-#' @description A list containing named colors, base colors, and predefined color palettes for consistent visualization styling.
-#' @returns List with color definitions including named_colors, base color, and palettes
+#' Color definitions for Core Surveillance styling
+#'
+#' @description A list holding the named colors, the base color, and the
+#'   predefined color palettes used by the Core Surveillance styling functions.
+#' @format A list with the following elements:
+#' \describe{
+#'   \item{named_colors}{Named character vector of hex codes "H1" to "H12".}
+#'   \item{base}{The base color (element "H1" of \code{named_colors}).}
+#'   \item{palettes}{Named list of palettes. The \code{primary} palettes have
+#'     1 to 12 levels (\code{primary_1} to \code{primary_12}); \code{warning_3}
+#'     has 3 levels; \code{posneg_1} and \code{posneg_2} have 1 and 2 levels.}
+#'   \item{palette_names}{Character vector of the palette family names
+#'     ("primary", "posneg", "warning").}
+#' }
+#' @returns A list. See the Format section for the elements.
 #' @examples
 #' # Access named colors
 #' colors$named_colors["H1"]
-#' 
+#'
 #' # View primary palette
 #' colors$palettes$primary_3
-#' 
+#'
 #' # See all available palettes
 #' names(colors$palettes)
 #' @family csstyle_utilities

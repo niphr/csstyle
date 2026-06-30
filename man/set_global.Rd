@@ -2,7 +2,7 @@
 % Please edit documentation in R/1_environments.r
 \name{set_global}
 \alias{set_global}
-\title{Set global configuration parameters for location code formatting}
+\title{Set global configuration for location code formatting}
 \usage{
 set_global(
   location_code_to_factor_label = "location_name",
@@ -10,15 +10,23 @@ set_global(
 )
 }
 \arguments{
-\item{location_code_to_factor_label}{Column name to use for location labels (default: "location_name")}
+\item{location_code_to_factor_label}{Column name in the reference data to use
+for location labels (default: "location_name").}
 
-\item{location_code_to_factor_label_if_not_unique}{Column name to use when location names are not unique (default: "location_name_description_nb")}
+\item{location_code_to_factor_label_if_not_unique}{Column name in the
+reference data to use when the chosen labels are not unique
+(default: "location_name_description_nb").}
 }
 \value{
-NULL (invisibly) - function called for side effects
+Called for its side effect of updating the global configuration.
+  Returns the assigned value invisibly.
 }
 \description{
-This function sets global parameters that control how location codes are formatted throughout the package.
+Sets the global defaults that control how location codes are
+  turned into labels by \code{\link{format_location_code_as_factor}} and
+  \code{\link{format_location_code_as_character}}. These defaults are used
+  whenever those functions are called without an explicit \code{label} or
+  \code{label_if_not_unique}.
 }
 \examples{
 # Set global location formatting preferences
