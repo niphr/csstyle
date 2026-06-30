@@ -37,7 +37,7 @@ Character vector with formatted dates/datetimes
 format_date_as_nor()
 #> [1] "30.06.2026"
 format_datetime_as_nor()
-#> [1] "30.06.2026 kl. 10:52"
+#> [1] "30.06.2026 kl. 10:08"
 
 # Format specific dates
 format_date_as_nor(as.Date("2023-12-25"))
