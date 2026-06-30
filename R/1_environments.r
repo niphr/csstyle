@@ -27,7 +27,7 @@ set_global <- function(
   global$location_code_to_factor_label_if_not_unique <- location_code_to_factor_label_if_not_unique
 }
 
-#' Color palette definitions for CSIDS styling
+#' Color palette definitions for Core Surveillance styling
 #' 
 #' @description A list containing named colors, base colors, and predefined color palettes for consistent visualization styling.
 #' @returns List with color definitions including named_colors, base color, and palettes

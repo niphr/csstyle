@@ -10,16 +10,16 @@ display_all_palettes()
 A ggplot2 plot displaying all color palettes
 }
 \description{
-Creates a visualization showing all available CSIDS color palettes with their color codes and names.
+Creates a visualization showing all available Core Surveillance color palettes with their color codes and names.
 }
 \examples{
 # Display all available color palettes
 display_all_palettes()
 }
 \seealso{
-Other csstyle_utilities: 
+Other csstyle_utilities:
 \code{\link{colors}},
-\code{\link{every_nth}()},
-\code{\link{set_global}()}
+\code{\link[=every_nth]{every_nth()}},
+\code{\link[=set_global]{set_global()}}
 }
 \concept{csstyle_utilities}

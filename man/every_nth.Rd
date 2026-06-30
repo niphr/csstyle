@@ -22,9 +22,9 @@ scale_x_discrete(NULL, breaks = every_nth(n = 2))
 }
 }
 \seealso{
-Other csstyle_utilities: 
+Other csstyle_utilities:
 \code{\link{colors}},
-\code{\link{display_all_palettes}()},
-\code{\link{set_global}()}
+\code{\link[=display_all_palettes]{display_all_palettes()}},
+\code{\link[=set_global]{set_global()}}
 }
 \concept{csstyle_utilities}

@@ -5,7 +5,7 @@ template:
   params:
     hero:
       overline: "R package · Output styling"
-      title: "Consistent outputs, CSIDS style."
+      title: "Consistent outputs, Core Surveillance style."
       lede: >
         A styling system for consistent visual outputs — ggplot2 themes, colour
         palettes, and dual number and date formatting for both Norwegian reports and

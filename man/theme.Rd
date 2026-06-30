@@ -3,7 +3,7 @@
 \name{theme_cs}
 \alias{theme_cs}
 \alias{set_x_axis_vertical}
-\title{CSIDS ggplot2 theme for consistent styling}
+\title{Core Surveillance ggplot2 theme for consistent styling}
 \usage{
 theme_cs(
   base_size = 16,
@@ -50,7 +50,7 @@ Complete ggplot2 theme object
 ggplot2 theme component
 }
 \description{
-Custom ggplot2 theme following CSIDS visual guidelines with configurable grid lines and formatting.
+Custom ggplot2 theme following Core Surveillance visual guidelines with configurable grid lines and formatting.
 }
 \examples{
 library(ggplot2)
@@ -72,8 +72,8 @@ ggplot(mtcars, aes(x = rownames(mtcars), y = mpg)) +
   set_x_axis_vertical()
 }
 \seealso{
-Other csstyle_ggplot2: 
-\code{\link{scale_color_cs}()},
-\code{\link{scale_fill_cs}()}
+Other csstyle_ggplot2:
+\code{\link[=scale_color_cs]{scale_color_cs()}},
+\code{\link[=scale_fill_cs]{scale_fill_cs()}}
 }
 \concept{csstyle_ggplot2}

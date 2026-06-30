@@ -19,9 +19,9 @@ cs_pal <- function(palette = "primary", direction = 1) {
   }
 }
 
-#' ggplot2 color scale using CSIDS color palettes
+#' ggplot2 color scale using Core Surveillance color palettes
 #'
-#' @description Creates a discrete color scale for ggplot2 using predefined CSIDS color palettes.
+#' @description Creates a discrete color scale for ggplot2 using predefined Core Surveillance color palettes.
 #' @param palette Name of color palette to use (default: "primary"). Options: "primary", "warning", "posneg"
 #' @param direction Direction of color palette: 1 for normal, -1 for reversed (default: 1)
 #' @param ... Additional arguments passed to ggplot2::discrete_scale()
@@ -46,9 +46,9 @@ scale_color_cs <- function(..., palette = "primary", direction = 1) {
   ggplot2::discrete_scale("colour", palette = pal, ...)
 }
 
-#' ggplot2 fill scale using CSIDS color palettes
+#' ggplot2 fill scale using Core Surveillance color palettes
 #'
-#' @description Creates a discrete fill scale for ggplot2 using predefined CSIDS color palettes.
+#' @description Creates a discrete fill scale for ggplot2 using predefined Core Surveillance color palettes.
 #' @param palette Name of color palette to use (default: "primary"). Options: "primary", "warning", "posneg"
 #' @param direction Direction of color palette: 1 for normal, -1 for reversed (default: 1)
 #' @param ... Additional arguments passed to ggplot2::discrete_scale()
@@ -75,7 +75,7 @@ scale_fill_cs <- function(..., palette = "primary", direction = 1) {
 
 #' Display all available color palettes
 #'
-#' @description Creates a visualization showing all available CSIDS color palettes with their color codes and names.
+#' @description Creates a visualization showing all available Core Surveillance color palettes with their color codes and names.
 #' @returns A ggplot2 plot displaying all color palettes
 #' @examples
 #' # Display all available color palettes

@@ -1,6 +1,6 @@
-#' CSIDS ggplot2 theme for consistent styling
+#' Core Surveillance ggplot2 theme for consistent styling
 #'
-#' @description Custom ggplot2 theme following CSIDS visual guidelines with configurable grid lines and formatting.
+#' @description Custom ggplot2 theme following Core Surveillance visual guidelines with configurable grid lines and formatting.
 #' @param base_size Base font size in points (default: 16)
 #' @param base_family Base font family (default: "")
 #' @param base_line_size Base line size relative to base_size (default: base_size/22)

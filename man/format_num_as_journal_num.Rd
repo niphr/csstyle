@@ -36,25 +36,11 @@ format_num_as_journal_num_1(c(1234.56, 9876.54, NA))
 format_num_as_journal_num_2(c(1234.56, 9876.54, NA))
 }
 \seealso{
-Other csstyle_journal_formatters: 
-\code{\link{format_num_as_journal_invlog10_1}()},
-\code{\link{format_num_as_journal_invlog2_1}()},
-\code{\link{format_num_as_journal_invloge_1}()},
-\code{\link{format_num_as_journal_per100k_0}()},
-\code{\link{format_num_as_journal_perc_0}()}
-
-Other csstyle_journal_formatters: 
-\code{\link{format_num_as_journal_invlog10_1}()},
-\code{\link{format_num_as_journal_invlog2_1}()},
-\code{\link{format_num_as_journal_invloge_1}()},
-\code{\link{format_num_as_journal_per100k_0}()},
-\code{\link{format_num_as_journal_perc_0}()}
-
-Other csstyle_journal_formatters: 
-\code{\link{format_num_as_journal_invlog10_1}()},
-\code{\link{format_num_as_journal_invlog2_1}()},
-\code{\link{format_num_as_journal_invloge_1}()},
-\code{\link{format_num_as_journal_per100k_0}()},
-\code{\link{format_num_as_journal_perc_0}()}
+Other csstyle_journal_formatters:
+\code{\link[=format_num_as_journal_invlog10_1]{format_num_as_journal_invlog10_1()}},
+\code{\link[=format_num_as_journal_invlog2_1]{format_num_as_journal_invlog2_1()}},
+\code{\link[=format_num_as_journal_invloge_1]{format_num_as_journal_invloge_1()}},
+\code{\link[=format_num_as_journal_per100k_0]{format_num_as_journal_per100k_0()}},
+\code{\link[=format_num_as_journal_perc_0]{format_num_as_journal_perc_0()}}
 }
 \concept{csstyle_journal_formatters}

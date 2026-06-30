@@ -31,9 +31,9 @@ set_global(
 set_global()
 }
 \seealso{
-Other csstyle_utilities: 
+Other csstyle_utilities:
 \code{\link{colors}},
-\code{\link{display_all_palettes}()},
-\code{\link{every_nth}()}
+\code{\link[=display_all_palettes]{display_all_palettes()}},
+\code{\link[=every_nth]{every_nth()}}
 }
 \concept{csstyle_utilities}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/2_palettes.R
 \name{scale_fill_cs}
 \alias{scale_fill_cs}
-\title{ggplot2 fill scale using CSIDS color palettes}
+\title{ggplot2 fill scale using Core Surveillance color palettes}
 \usage{
 scale_fill_cs(..., palette = "primary", direction = 1)
 }
@@ -17,7 +17,7 @@ scale_fill_cs(..., palette = "primary", direction = 1)
 A ggplot2 discrete fill scale
 }
 \description{
-Creates a discrete fill scale for ggplot2 using predefined CSIDS color palettes.
+Creates a discrete fill scale for ggplot2 using predefined Core Surveillance color palettes.
 }
 \examples{
 library(ggplot2)
@@ -33,8 +33,8 @@ ggplot(mtcars, aes(x = factor(vs), fill = factor(vs))) +
   scale_fill_cs(palette = "posneg")
 }
 \seealso{
-Other csstyle_ggplot2: 
-\code{\link{scale_color_cs}()},
-\code{\link{theme_cs}()}
+Other csstyle_ggplot2:
+\code{\link[=scale_color_cs]{scale_color_cs()}},
+\code{\link[=theme_cs]{theme_cs()}}
 }
 \concept{csstyle_ggplot2}

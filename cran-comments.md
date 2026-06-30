@@ -22,4 +22,4 @@ None currently. This is a new submission to CRAN.
 
 ## Additional notes
 
-We have now put ggplot2 and CSIDS in quotation marks as requested. We do not have reference about the methods used here.
+We have now put ggplot2 and Core Surveillance in quotation marks as requested. We do not have reference about the methods used here.

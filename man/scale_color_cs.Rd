@@ -2,7 +2,7 @@
 % Please edit documentation in R/2_palettes.R
 \name{scale_color_cs}
 \alias{scale_color_cs}
-\title{ggplot2 color scale using CSIDS color palettes}
+\title{ggplot2 color scale using Core Surveillance color palettes}
 \usage{
 scale_color_cs(..., palette = "primary", direction = 1)
 }
@@ -17,7 +17,7 @@ scale_color_cs(..., palette = "primary", direction = 1)
 A ggplot2 discrete color scale
 }
 \description{
-Creates a discrete color scale for ggplot2 using predefined CSIDS color palettes.
+Creates a discrete color scale for ggplot2 using predefined Core Surveillance color palettes.
 }
 \examples{
 library(ggplot2)
@@ -33,8 +33,8 @@ ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) +
   scale_color_cs(palette = "warning")
 }
 \seealso{
-Other csstyle_ggplot2: 
-\code{\link{scale_fill_cs}()},
-\code{\link{theme_cs}()}
+Other csstyle_ggplot2:
+\code{\link[=scale_fill_cs]{scale_fill_cs()}},
+\code{\link[=theme_cs]{theme_cs()}}
 }
 \concept{csstyle_ggplot2}

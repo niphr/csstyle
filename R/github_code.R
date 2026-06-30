@@ -3,7 +3,7 @@
 #' @examples
 #' \dontrun{
 #' # Example usage (requires internet connection)
-#' x <- as_github_code("https://github.com/csids/csstyle/blob/main/README.md")
+#' x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
 #' print(x, lines = 1:3)
 #' }
 #' @returns Class github_code

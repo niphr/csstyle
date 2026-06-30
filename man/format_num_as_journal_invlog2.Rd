@@ -28,18 +28,11 @@ format_num_as_journal_invlog2_1(c(1, 2, 3))  # 2^1, 2^2, 2^3
 format_num_as_journal_invlog2_2(c(1, 2, 3))
 }
 \seealso{
-Other csstyle_journal_formatters: 
-\code{\link{format_num_as_journal_invlog10_1}()},
-\code{\link{format_num_as_journal_invloge_1}()},
-\code{\link{format_num_as_journal_num_0}()},
-\code{\link{format_num_as_journal_per100k_0}()},
-\code{\link{format_num_as_journal_perc_0}()}
-
-Other csstyle_journal_formatters: 
-\code{\link{format_num_as_journal_invlog10_1}()},
-\code{\link{format_num_as_journal_invloge_1}()},
-\code{\link{format_num_as_journal_num_0}()},
-\code{\link{format_num_as_journal_per100k_0}()},
-\code{\link{format_num_as_journal_perc_0}()}
+Other csstyle_journal_formatters:
+\code{\link[=format_num_as_journal_invlog10_1]{format_num_as_journal_invlog10_1()}},
+\code{\link[=format_num_as_journal_invloge_1]{format_num_as_journal_invloge_1()}},
+\code{\link[=format_num_as_journal_num_0]{format_num_as_journal_num_0()}},
+\code{\link[=format_num_as_journal_per100k_0]{format_num_as_journal_per100k_0()}},
+\code{\link[=format_num_as_journal_perc_0]{format_num_as_journal_perc_0()}}
 }
 \concept{csstyle_journal_formatters}

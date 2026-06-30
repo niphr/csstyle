@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Package Overview
 
-**csstyle** is an R package for standardizing outputs (graphs, tables, reports) using CSIDS visual guidelines. It provides consistent ggplot2 themes, color palettes, and formatting functions to reduce output variation across projects.
+**csstyle** is an R package for standardizing outputs (graphs, tables, reports) using Core Surveillance visual guidelines. It provides consistent ggplot2 themes, color palettes, and formatting functions to reduce output variation across projects.
 
 ## Development Commands
 
@@ -49,7 +49,7 @@ pkgdown::build_site()
 1. **Environment & Global Settings** (`R/1_environments.r`):
    - Global configuration via `global` environment
    - `set_global()` function for location code formatting preferences
-   - Central `colors` list defining all CSIDS color palettes
+   - Central `colors` list defining all Core Surveillance color palettes
 
 2. **Color System** (`R/2_palettes.R`):
    - Named colors (H1-H12) with specific hex codes
@@ -58,7 +58,7 @@ pkgdown::build_site()
    - `scale_color_cs()` and `scale_fill_cs()` ggplot2 integration
 
 3. **Theme System** (`R/ggplot2_theme.R`):
-   - `theme_cs()` - Main CSIDS ggplot2 theme
+   - `theme_cs()` - Main Core Surveillance ggplot2 theme
    - Configurable grid lines, legend position, axis orientation
    - Panel-on-top option for layered visualizations
 
@@ -87,7 +87,7 @@ pkgdown::build_site()
 - **Consistency over flexibility**: Limited, standardized options rather than infinite customization
 - **Dual formatting systems**: Separate Norwegian (domestic) and journal (international) formatting to serve different audiences
 - **Consistent API patterns**: Parallel function naming (`format_*_as_nor` vs `format_*_as_journal`) for predictable usage
-- **CSIDS branding**: All visual elements follow organizational style guidelines
+- **Core Surveillance branding**: All visual elements follow organizational style guidelines
 - **Modular palette system**: Colors defined centrally, applied consistently across functions
 
 ## Package Dependencies
@@ -96,7 +96,7 @@ pkgdown::build_site()
 
 ## Important Notes
 
-- Package follows CSIDS organizational styling standards
+- Package follows Core Surveillance organizational styling standards
 - Color palette system is hierarchical (primary_1 through primary_12)  
 - **Dual formatting systems**: 
   - Norwegian functions (`format_*_as_nor`) return "IK" for missing values, use Norwegian conventions

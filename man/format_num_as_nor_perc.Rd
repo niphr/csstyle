@@ -36,25 +36,11 @@ format_num_as_nor_perc_1(c(12.34, 56.78, NA))
 format_num_as_nor_perc_2(c(12.34, 56.78, NA))
 }
 \seealso{
-Other csstyle_formatters: 
-\code{\link{format_num_as_nor_invlog10_1}()},
-\code{\link{format_num_as_nor_invlog2_1}()},
-\code{\link{format_num_as_nor_invloge_1}()},
-\code{\link{format_num_as_nor_num_0}()},
-\code{\link{format_num_as_nor_per100k_0}()}
-
-Other csstyle_formatters: 
-\code{\link{format_num_as_nor_invlog10_1}()},
-\code{\link{format_num_as_nor_invlog2_1}()},
-\code{\link{format_num_as_nor_invloge_1}()},
-\code{\link{format_num_as_nor_num_0}()},
-\code{\link{format_num_as_nor_per100k_0}()}
-
-Other csstyle_formatters: 
-\code{\link{format_num_as_nor_invlog10_1}()},
-\code{\link{format_num_as_nor_invlog2_1}()},
-\code{\link{format_num_as_nor_invloge_1}()},
-\code{\link{format_num_as_nor_num_0}()},
-\code{\link{format_num_as_nor_per100k_0}()}
+Other csstyle_formatters:
+\code{\link[=format_num_as_nor_invlog10_1]{format_num_as_nor_invlog10_1()}},
+\code{\link[=format_num_as_nor_invlog2_1]{format_num_as_nor_invlog2_1()}},
+\code{\link[=format_num_as_nor_invloge_1]{format_num_as_nor_invloge_1()}},
+\code{\link[=format_num_as_nor_num_0]{format_num_as_nor_num_0()}},
+\code{\link[=format_num_as_nor_per100k_0]{format_num_as_nor_per100k_0()}}
 }
 \concept{csstyle_formatters}
