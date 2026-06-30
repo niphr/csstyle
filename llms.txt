@@ -24,6 +24,12 @@ and
 Parallel number and date functions for Norwegian domestic reports and
 international journal publications.
 
+Palettes
+
+![The csstyle colour palettes](gallery/palette.png)
+
+The csstyle colour palettes
+
 ## Overview
 
 csstyle provides ggplot2 themes, colour palettes, and formatting
