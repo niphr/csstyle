@@ -10,6 +10,10 @@ title: csstyle
 <div class="cs-card"><div class="cs-card-num">03</div><h3>Dual Formatting</h3><p>Parallel number and date functions for Norwegian domestic reports and international journal publications.</p></div>
 </div>
 
+<p class="cs-section">Palettes</p>
+
+![The csstyle colour palettes](gallery/palette.png)
+
 ## Overview
 
 csstyle provides ggplot2 themes, colour palettes, and formatting functions that follow Core Surveillance visual guidelines. It covers graphs, tables, and reports, keeping outputs consistent across projects.
