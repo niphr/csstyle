@@ -2,20 +2,16 @@
 title: csstyle
 ---
 
-## Overview 
+<p class="cs-section">Highlights</p>
 
-[csstyle](https://niphr.github.io/csstyle/) is a comprehensive styling system for consistent visual outputs using Core Surveillance guidelines. It provides ggplot2 themes, color palettes, and dual formatting functions to standardize graphs, tables, and reports.
+<div class="cs-cards">
+<div class="cs-card"><div class="cs-card-num">01</div><h3>ggplot2 Themes</h3><p>A Core Surveillance ggplot2 theme with configurable grid lines, legend position, and axis orientation.</p></div>
+<div class="cs-card"><div class="cs-card-num">02</div><h3>Colour Palettes</h3><p>Named colour scales (primary, warning, posneg) wired directly into ggplot2 via <code>scale_color_cs()</code> and <code>scale_fill_cs()</code>.</p></div>
+<div class="cs-card"><div class="cs-card-num">03</div><h3>Dual Formatting</h3><p>Parallel number and date functions for Norwegian domestic reports and international journal publications.</p></div>
+</div>
 
-**Key Features:**
+## Overview
 
-- **ggplot2 themes** with Core Surveillance styling and configurable options
-- **Color palettes** with hierarchical system (primary, warning, posneg)
-- **Dual formatting system**:
-  - **Norwegian formatting** for domestic reports (comma decimal, space thousands, "IK" for missing)
-  - **Journal formatting** for academic publications (decimal point, comma thousands, "NA" for missing)
-- **Number formatting** for percentages, per-100k rates, and log transformations
-- **Date formatting** with Norwegian conventions vs ISO 8601 standards
+csstyle provides ggplot2 themes, colour palettes, and formatting functions that follow Core Surveillance visual guidelines. It covers graphs, tables, and reports, keeping outputs consistent across projects.
 
-The package focuses on consistency over flexibility to ensure reproducible, professional outputs across different research contexts.
-
-Run `help(package="csstyle")` for more information.
+Read the introduction vignette [here](articles/csstyle.html) or run `help(package = "csstyle")`.
