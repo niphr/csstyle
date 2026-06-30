@@ -25,8 +25,4 @@ Other csstyle_utilities:
 ``` r
 # Display all available color palettes
 display_all_palettes()
-#> Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-#> ℹ Please use `linewidth` instead.
-#> ℹ The deprecated feature was likely used in the csstyle package.
-#>   Please report the issue at <https://github.com/niphr/csstyle/issues>.
 ```

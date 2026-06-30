@@ -68,13 +68,6 @@ head(colors$named_colors)
 
 # Display all palettes
 display_all_palettes()
-#> Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-#> ℹ Please use `linewidth` instead.
-#> ℹ The deprecated feature was likely used in the csstyle package.
-#>   Please report the issue at <https://github.com/niphr/csstyle/issues>.
-#> This warning is displayed once per session.
-#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
-#> generated.
 ```
 
 ![](csstyle_files/figure-html/colors-1.png)
