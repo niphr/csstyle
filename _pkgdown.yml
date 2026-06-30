@@ -2,6 +2,21 @@ url: https://niphr.github.io/csstyle/
 
 template:
   package: cstemplate
+  params:
+    hero:
+      overline: "R package · Output styling"
+      title: "Consistent outputs, CSIDS style."
+      lede: >
+        A styling system for consistent visual outputs — ggplot2 themes, colour
+        palettes, and dual number and date formatting for both Norwegian reports and
+        international journals.
+      cta:
+        primary:
+          text: "Get started"
+          href: "articles/csstyle.html"
+        secondary:
+          text: "Browse the reference →"
+          href: "reference/index.html"
 
 reference:
 - title: Visualization
