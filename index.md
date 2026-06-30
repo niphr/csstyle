@@ -1,27 +1,35 @@
+Highlights
+
+01
+
+### ggplot2 Themes
+
+A Core Surveillance ggplot2 theme with configurable grid lines, legend
+position, and axis orientation.
+
+02
+
+### Colour Palettes
+
+Named colour scales (primary, warning, posneg) wired directly into
+ggplot2 via
+[`scale_color_cs()`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
+and
+[`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md).
+
+03
+
+### Dual Formatting
+
+Parallel number and date functions for Norwegian domestic reports and
+international journal publications.
+
 ## Overview
 
-[csstyle](https://niphr.github.io/csstyle/) is a comprehensive styling
-system for consistent visual outputs using Core Surveillance guidelines.
-It provides ggplot2 themes, color palettes, and dual formatting
-functions to standardize graphs, tables, and reports.
+csstyle provides ggplot2 themes, colour palettes, and formatting
+functions that follow Core Surveillance visual guidelines. It covers
+graphs, tables, and reports, keeping outputs consistent across projects.
 
-**Key Features:**
-
-- **ggplot2 themes** with Core Surveillance styling and configurable
-  options
-- **Color palettes** with hierarchical system (primary, warning, posneg)
-- **Dual formatting system**:
-  - **Norwegian formatting** for domestic reports (comma decimal, space
-    thousands, “IK” for missing)
-  - **Journal formatting** for academic publications (decimal point,
-    comma thousands, “NA” for missing)
-- **Number formatting** for percentages, per-100k rates, and log
-  transformations
-- **Date formatting** with Norwegian conventions vs ISO 8601 standards
-
-The package focuses on consistency over flexibility to ensure
-reproducible, professional outputs across different research contexts.
-
-Run
-[`help(package="csstyle")`](https://niphr.github.io/csstyle/reference)
-for more information.
+Read the introduction vignette
+[here](https://niphr.github.io/csstyle/articles/csstyle.md) or run
+[`help(package = "csstyle")`](https://niphr.github.io/csstyle/reference).
