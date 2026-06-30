@@ -1,7 +1,7 @@
-# ggplot2 color scale using CSIDS color palettes
+# ggplot2 color scale using Core Surveillance color palettes
 
-Creates a discrete color scale for ggplot2 using predefined CSIDS color
-palettes.
+Creates a discrete color scale for ggplot2 using predefined Core
+Surveillance color palettes.
 
 ## Usage
 

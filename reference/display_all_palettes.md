@@ -1,7 +1,7 @@
 # Display all available color palettes
 
-Creates a visualization showing all available CSIDS color palettes with
-their color codes and names.
+Creates a visualization showing all available Core Surveillance color
+palettes with their color codes and names.
 
 ## Usage
 

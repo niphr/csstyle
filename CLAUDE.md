@@ -6,9 +6,9 @@ with code in this repository.
 ## Package Overview
 
 **csstyle** is an R package for standardizing outputs (graphs, tables,
-reports) using CSIDS visual guidelines. It provides consistent ggplot2
-themes, color palettes, and formatting functions to reduce output
-variation across projects.
+reports) using Core Surveillance visual guidelines. It provides
+consistent ggplot2 themes, color palettes, and formatting functions to
+reduce output variation across projects.
 
 ## Development Commands
 
@@ -57,7 +57,8 @@ pkgdown::build_site()
     - Global configuration via `global` environment
     - [`set_global()`](https://niphr.github.io/csstyle/reference/set_global.md)
       function for location code formatting preferences
-    - Central `colors` list defining all CSIDS color palettes
+    - Central `colors` list defining all Core Surveillance color
+      palettes
 2.  **Color System** (`R/2_palettes.R`):
     - Named colors (H1-H12) with specific hex codes
     - Palette types: `primary`, `warning`, `posneg`
@@ -68,7 +69,7 @@ pkgdown::build_site()
       ggplot2 integration
 3.  **Theme System** (`R/ggplot2_theme.R`):
     - [`theme_cs()`](https://niphr.github.io/csstyle/reference/theme.md) -
-      Main CSIDS ggplot2 theme
+      Main Core Surveillance ggplot2 theme
     - Configurable grid lines, legend position, axis orientation
     - Panel-on-top option for layered visualizations
 4.  **Dual Number Formatting System** (`R/format_num.R`):
@@ -107,8 +108,8 @@ pkgdown::build_site()
   (international) formatting to serve different audiences
 - **Consistent API patterns**: Parallel function naming
   (`format_*_as_nor` vs `format_*_as_journal`) for predictable usage
-- **CSIDS branding**: All visual elements follow organizational style
-  guidelines
+- **Core Surveillance branding**: All visual elements follow
+  organizational style guidelines
 - **Modular palette system**: Colors defined centrally, applied
   consistently across functions
 
@@ -119,7 +120,7 @@ stringr, csdata
 
 ## Important Notes
 
-- Package follows CSIDS organizational styling standards
+- Package follows Core Surveillance organizational styling standards
 - Color palette system is hierarchical (primary_1 through primary_12)  
 - **Dual formatting systems**:
   - Norwegian functions (`format_*_as_nor`) return “IK” for missing

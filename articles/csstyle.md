@@ -10,25 +10,26 @@ library(ggplot2)
 ## Overview
 
 The `csstyle` package provides a system for standardizing outputs such
-as graphs, tables, and reports using CSIDS visual guidelines. Rather
-than offering infinite customization options, `csstyle` focuses on
-producing a limited set of outputs that consistently look the same.
+as graphs, tables, and reports using Core Surveillance visual
+guidelines. Rather than offering infinite customization options,
+`csstyle` focuses on producing a limited set of outputs that
+consistently look the same.
 
 ## Key Features
 
-- **Consistent ggplot2 themes** with CSIDS styling
+- **Consistent ggplot2 themes** with Core Surveillance styling
 - **Predefined color palettes** for professional visualizations  
 - **Norwegian number formatting** conventions
 - **Utility functions** for common tasks
 
-## Using CSIDS Themes
+## Using Core Surveillance Themes
 
 The main theme function
 [`theme_cs()`](https://niphr.github.io/csstyle/reference/theme.md)
 provides a clean, professional appearance:
 
 ``` r
-# Basic scatter plot with CSIDS theme
+# Basic scatter plot with Core Surveillance theme
 ggplot(mtcars, aes(x = mpg, y = hp)) +
   geom_point() +
   theme_cs() +
@@ -263,8 +264,8 @@ ggplot(mtcars, aes(x = rownames(mtcars), y = mpg)) +
 ## Conclusion
 
 The `csstyle` package provides a comprehensive set of tools for creating
-consistent, professional visualizations that follow both Norwegian
-(CSIDS) and international journal standards. The dual formatting
+consistent, professional visualizations that follow both Norwegian (Core
+Surveillance) and international journal standards. The dual formatting
 approach ensures that:
 
 - **Norwegian functions** (`*_as_nor`) follow local conventions for

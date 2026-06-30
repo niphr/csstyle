@@ -1,7 +1,7 @@
-# ggplot2 fill scale using CSIDS color palettes
+# ggplot2 fill scale using Core Surveillance color palettes
 
-Creates a discrete fill scale for ggplot2 using predefined CSIDS color
-palettes.
+Creates a discrete fill scale for ggplot2 using predefined Core
+Surveillance color palettes.
 
 ## Usage
 

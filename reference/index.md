@@ -6,16 +6,16 @@
 
 - [`theme_cs()`](https://niphr.github.io/csstyle/reference/theme.md)
   [`set_x_axis_vertical()`](https://niphr.github.io/csstyle/reference/theme.md)
-  : CSIDS ggplot2 theme for consistent styling
+  : Core Surveillance ggplot2 theme for consistent styling
 
 ### Colors and palettes
 
 - [`scale_color_cs()`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
-  : ggplot2 color scale using CSIDS color palettes
+  : ggplot2 color scale using Core Surveillance color palettes
 - [`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md)
-  : ggplot2 fill scale using CSIDS color palettes
+  : ggplot2 fill scale using Core Surveillance color palettes
 - [`colors`](https://niphr.github.io/csstyle/reference/colors.md) :
-  Color palette definitions for CSIDS styling
+  Color palette definitions for Core Surveillance styling
 - [`display_all_palettes()`](https://niphr.github.io/csstyle/reference/display_all_palettes.md)
   : Display all available color palettes
 

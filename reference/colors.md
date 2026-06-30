@@ -1,4 +1,4 @@
-# Color palette definitions for CSIDS styling
+# Color palette definitions for Core Surveillance styling
 
 A list containing named colors, base colors, and predefined color
 palettes for consistent visualization styling.
@@ -8,10 +8,6 @@ palettes for consistent visualization styling.
 ``` r
 colors
 ```
-
-## Format
-
-An object of class `list` of length 4.
 
 ## Value
 

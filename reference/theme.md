@@ -1,7 +1,7 @@
-# CSIDS ggplot2 theme for consistent styling
+# Core Surveillance ggplot2 theme for consistent styling
 
-Custom ggplot2 theme following CSIDS visual guidelines with configurable
-grid lines and formatting.
+Custom ggplot2 theme following Core Surveillance visual guidelines with
+configurable grid lines and formatting.
 
 ## Usage
 

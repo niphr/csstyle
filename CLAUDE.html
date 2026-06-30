@@ -51,7 +51,7 @@
 <p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
 <div class="section level2">
 <h2 id="package-overview">Package Overview<a class="anchor" aria-label="anchor" href="#package-overview"></a></h2>
-<p><strong>csstyle</strong> is an R package for standardizing outputs (graphs, tables, reports) using CSIDS visual guidelines. It provides consistent ggplot2 themes, color palettes, and formatting functions to reduce output variation across projects.</p>
+<p><strong>csstyle</strong> is an R package for standardizing outputs (graphs, tables, reports) using Core Surveillance visual guidelines. It provides consistent ggplot2 themes, color palettes, and formatting functions to reduce output variation across projects.</p>
 </div>
 <div class="section level2">
 <h2 id="development-commands">Development Commands<a class="anchor" aria-label="anchor" href="#development-commands"></a></h2>
@@ -98,7 +98,7 @@
 <ul><li>Global configuration via <code>global</code> environment</li>
 <li>
 <code><a href="reference/set_global.html">set_global()</a></code> function for location code formatting preferences</li>
-<li>Central <code>colors</code> list defining all CSIDS color palettes</li>
+<li>Central <code>colors</code> list defining all Core Surveillance color palettes</li>
 </ul></li>
 <li>
 <strong>Color System</strong> (<code>R/2_palettes.R</code>):
@@ -112,7 +112,7 @@
 <li>
 <strong>Theme System</strong> (<code>R/ggplot2_theme.R</code>):
 <ul><li>
-<code><a href="reference/theme.html">theme_cs()</a></code> - Main CSIDS ggplot2 theme</li>
+<code><a href="reference/theme.html">theme_cs()</a></code> - Main Core Surveillance ggplot2 theme</li>
 <li>Configurable grid lines, legend position, axis orientation</li>
 <li>Panel-on-top option for layered visualizations</li>
 </ul></li>
@@ -156,7 +156,7 @@
 <li>
 <strong>Consistent API patterns</strong>: Parallel function naming (<code>format_*_as_nor</code> vs <code>format_*_as_journal</code>) for predictable usage</li>
 <li>
-<strong>CSIDS branding</strong>: All visual elements follow organizational style guidelines</li>
+<strong>Core Surveillance branding</strong>: All visual elements follow organizational style guidelines</li>
 <li>
 <strong>Modular palette system</strong>: Colors defined centrally, applied consistently across functions</li>
 </ul></div>
@@ -167,7 +167,7 @@
 </div>
 <div class="section level2">
 <h2 id="important-notes">Important Notes<a class="anchor" aria-label="anchor" href="#important-notes"></a></h2>
-<ul><li>Package follows CSIDS organizational styling standards</li>
+<ul><li>Package follows Core Surveillance organizational styling standards</li>
 <li>Color palette system is hierarchical (primary_1 through primary_12)<br></li>
 <li>
 <strong>Dual formatting systems</strong>:
