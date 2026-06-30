@@ -1,7 +1,12 @@
-# Set global configuration parameters for location code formatting
+# Set global configuration for location code formatting
 
-This function sets global parameters that control how location codes are
-formatted throughout the package.
+Sets the global defaults that control how location codes are turned into
+labels by
+[`format_location_code_as_factor`](https://niphr.github.io/csstyle/reference/format_location_code_as.md)
+and
+[`format_location_code_as_character`](https://niphr.github.io/csstyle/reference/format_location_code_as.md).
+These defaults are used whenever those functions are called without an
+explicit `label` or `label_if_not_unique`.
 
 ## Usage
 
@@ -16,16 +21,18 @@ set_global(
 
 - location_code_to_factor_label:
 
-  Column name to use for location labels (default: "location_name")
+  Column name in the reference data to use for location labels (default:
+  "location_name").
 
 - location_code_to_factor_label_if_not_unique:
 
-  Column name to use when location names are not unique (default:
-  "location_name_description_nb")
+  Column name in the reference data to use when the chosen labels are
+  not unique (default: "location_name_description_nb").
 
 ## Value
 
-NULL (invisibly) - function called for side effects
+Called for its side effect of updating the global configuration. Returns
+the assigned value invisibly.
 
 ## See also
 

@@ -1,6 +1,10 @@
-# An easy way to print github code
+# Create a github_code object from a GitHub URL
 
-An easy way to print github code
+Reads the lines of a file on GitHub and returns them as a `github_code`
+object. A "blob" URL is rewritten to the corresponding raw URL before
+the file is read. The object can be printed with line numbers and an
+optional link back to GitHub (see
+[`print.github_code`](https://niphr.github.io/csstyle/reference/print.github_code.md)).
 
 ## Usage
 
@@ -12,17 +16,28 @@ as_github_code(url)
 
 - url:
 
-  URL from github
+  Character string. A GitHub URL to a file, either a "blob" URL (e.g.
+  `https://github.com/owner/repo/blob/main/file.R`) or the corresponding
+  raw URL.
 
 ## Value
 
-Class github_code
+An object of class `github_code`: a character vector of the file's lines
+with a `pretty_url` attribute.
+
+## Details
+
+Create a github_code object from a GitHub URL
+
+## See also
+
+[`print.github_code`](https://niphr.github.io/csstyle/reference/print.github_code.md)
 
 ## Examples
 
 ``` r
 if (FALSE) { # \dontrun{
-# Example usage (requires internet connection)
+# Requires an internet connection
 x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
 print(x, lines = 1:3)
 } # }

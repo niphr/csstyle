@@ -57,7 +57,7 @@ Read the introduction vignette
 - [`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md)
   : ggplot2 fill scale using Core Surveillance color palettes
 - [`colors`](https://niphr.github.io/csstyle/reference/colors.md) :
-  Color palette definitions for Core Surveillance styling
+  Color definitions for Core Surveillance styling
 - [`display_all_palettes()`](https://niphr.github.io/csstyle/reference/display_all_palettes.md)
   : Display all available color palettes
 
@@ -151,13 +151,13 @@ Read the introduction vignette
 ## Development utilities
 
 - [`as_github_code()`](https://niphr.github.io/csstyle/reference/as_github_code.md)
-  : An easy way to print github code
+  : Create a github_code object from a GitHub URL
 - [`print(`*`<github_code>`*`)`](https://niphr.github.io/csstyle/reference/print.github_code.md)
-  : Print github_code
+  : Print a github_code object
 - [`view_html()`](https://niphr.github.io/csstyle/reference/view_html.md)
   : View HTML in the RStudio viewer
 - [`set_global()`](https://niphr.github.io/csstyle/reference/set_global.md)
-  : Set global configuration parameters for location code formatting
+  : Set global configuration for location code formatting
 
 # Articles
 

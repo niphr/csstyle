@@ -1,7 +1,7 @@
-# Color palette definitions for Core Surveillance styling
+# Color definitions for Core Surveillance styling
 
-A list containing named colors, base colors, and predefined color
-palettes for consistent visualization styling.
+A list holding the named colors, the base color, and the predefined
+color palettes used by the Core Surveillance styling functions.
 
 ## Usage
 
@@ -9,10 +9,32 @@ palettes for consistent visualization styling.
 colors
 ```
 
+## Format
+
+A list with the following elements:
+
+- named_colors:
+
+  Named character vector of hex codes "H1" to "H12".
+
+- base:
+
+  The base color (element "H1" of `named_colors`).
+
+- palettes:
+
+  Named list of palettes. The `primary` palettes have 1 to 12 levels
+  (`primary_1` to `primary_12`); `warning_3` has 3 levels; `posneg_1`
+  and `posneg_2` have 1 and 2 levels.
+
+- palette_names:
+
+  Character vector of the palette family names ("primary", "posneg",
+  "warning").
+
 ## Value
 
-List with color definitions including named_colors, base color, and
-palettes
+A list. See the Format section for the elements.
 
 ## See also
 
