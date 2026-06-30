@@ -106,7 +106,7 @@ display_all_palettes <- function() {
   to_plot[, pal := factor(pal, levels = tags)]
 
   q <- ggplot(to_plot, aes(x = x, y = pal, fill = V2, label = V3))
-  q <- q + geom_tile(color = "black", height = 0.5, size = 1)
+  q <- q + geom_tile(color = "black", height = 0.5, linewidth = 1)
   q <- q + geom_text()
   q <- q + scale_fill_manual(values = cols)
   q <- q + scale_x_continuous("Level")
