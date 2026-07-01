@@ -2,7 +2,7 @@
 
 ``` r
 library(csstyle)
-#> csstyle 2025.8.21
+#> csstyle 2026.7.1
 #> https://niphr.github.io/csstyle/
 library(ggplot2)
 ```

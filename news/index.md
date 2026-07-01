@@ -1,5 +1,18 @@
 # Changelog
 
+## Version 2026.7.1
+
+### Performance
+
+- **[`save_a4()`](https://niphr.github.io/csstyle/reference/save_a4.md)
+  now renders PNGs with the `ragg` AGG device**
+  ([`ragg::agg_png`](https://ragg.r-lib.org/reference/agg_png.html))
+  instead of the default `grDevices` PNG device. This is markedly faster
+  for busy, many-geom ggplots (and patchwork composites) at full A4 /
+  300 dpi, and produces cleaner text. Non-PNG filenames fall back to
+  `ggsave`’s extension-based device selection, so behaviour is unchanged
+  for them. `ragg` added to Imports.
+
 ## Version 2025.8.19
 
 ### Maintenance

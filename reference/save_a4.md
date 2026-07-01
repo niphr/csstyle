@@ -31,6 +31,13 @@ save_a4(q, filename, landscape = T, scaling_factor = 1)
 
 Nothing (called for side effects).
 
+## Details
+
+PNG output is rendered with the \`ragg\` AGG device (\`ragg::agg_png\`),
+which is markedly faster than the default \`grDevices\` PNG device for
+busy, many-geom ggplots (and gives cleaner text). Non-PNG filenames fall
+back to \`ggsave\`'s extension-based device selection.
+
 ## Examples
 
 ``` r

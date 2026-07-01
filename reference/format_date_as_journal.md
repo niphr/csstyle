@@ -40,7 +40,7 @@ Character vector with journal-formatted dates/datetimes
 format_date_as_journal()
 #> [1] "2026-07-01"
 format_datetime_as_journal()
-#> [1] "2026-07-01 09:06:29"
+#> [1] "2026-07-01 17:52:35"
 
 # Format specific dates
 format_date_as_journal(as.Date("2023-12-25"))

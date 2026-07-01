@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">csstyle</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2025.8.21</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.7.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +46,14 @@
       <small>Source: <a href="https://github.com/niphr/csstyle/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="2026.7.1" id="version-202671">Version 2026.7.1<a class="anchor" aria-label="anchor" href="#version-202671"></a></h2>
+<div class="section level3">
+<h3 id="performance-2026-7-1">Performance<a class="anchor" aria-label="anchor" href="#performance-2026-7-1"></a></h3>
+<ul><li>
+<strong><code><a href="../reference/save_a4.html">save_a4()</a></code> now renders PNGs with the <code>ragg</code> AGG device</strong> (<code><a href="https://ragg.r-lib.org/reference/agg_png.html" class="external-link">ragg::agg_png</a></code>) instead of the default <code>grDevices</code> PNG device. This is markedly faster for busy, many-geom ggplots (and patchwork composites) at full A4 / 300 dpi, and produces cleaner text. Non-PNG filenames fall back to <code>ggsave</code>’s extension-based device selection, so behaviour is unchanged for them. <code>ragg</code> added to Imports.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2025.8.19" id="version-2025819">Version 2025.8.19<a class="anchor" aria-label="anchor" href="#version-2025819"></a></h2>
 <div class="section level3">

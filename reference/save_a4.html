@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">csstyle</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2025.8.21</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.7.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,6 +79,13 @@
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     <p>Nothing (called for side effects).</p>
+    </div>
+    <div class="section level2">
+    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
+    <p>PNG output is rendered with the `ragg` AGG device
+  (`ragg::agg_png`), which is markedly faster than the default `grDevices`
+  PNG device for busy, many-geom ggplots (and gives cleaner text). Non-PNG
+  filenames fall back to `ggsave`'s extension-based device selection.</p>
     </div>
 
     <div class="section level2">
