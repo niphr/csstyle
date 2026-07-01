@@ -38,9 +38,9 @@ Character vector with journal-formatted dates/datetimes
 ``` r
 # Format current date/time using journal conventions (ISO 8601)
 format_date_as_journal()
-#> [1] "2026-06-30"
+#> [1] "2026-07-01"
 format_datetime_as_journal()
-#> [1] "2026-06-30 11:24:23"
+#> [1] "2026-07-01 09:06:29"
 
 # Format specific dates
 format_date_as_journal(as.Date("2023-12-25"))

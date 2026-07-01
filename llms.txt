@@ -30,16 +30,6 @@ Palettes
 
 The csstyle colour palettes
 
-## Overview
-
-csstyle provides ggplot2 themes, colour palettes, and formatting
-functions that follow Core Surveillance visual guidelines. It covers
-graphs, tables, and reports, keeping outputs consistent across projects.
-
-Read the introduction vignette
-[here](https://niphr.github.io/csstyle/articles/csstyle.md) or run
-[`help(package = "csstyle")`](https://niphr.github.io/csstyle/reference).
-
 # Package index
 
 ## Visualization
