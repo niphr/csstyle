@@ -21,6 +21,12 @@ Nothing (called for side effects).
 \description{
 Saves a ggplot2 plot with A4 paper dimensions.
 }
+\details{
+PNG output is rendered with the `ragg` AGG device
+  (`ragg::agg_png`), which is markedly faster than the default `grDevices`
+  PNG device for busy, many-geom ggplots (and gives cleaner text). Non-PNG
+  filenames fall back to `ggsave`'s extension-based device selection.
+}
 \examples{
 library(ggplot2)
 
