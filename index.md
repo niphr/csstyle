@@ -13,9 +13,3 @@ title: csstyle
 <p class="cs-section">Palettes</p>
 
 ![The csstyle colour palettes](gallery/palette.png)
-
-## Overview
-
-csstyle provides ggplot2 themes, colour palettes, and formatting functions that follow Core Surveillance visual guidelines. It covers graphs, tables, and reports, keeping outputs consistent across projects.
-
-Read the introduction vignette [here](articles/csstyle.html) or run `help(package = "csstyle")`.
