@@ -25,11 +25,11 @@ Imports: data.table,
     ragg,
     rstudioapi,
     stringr,
-    csdata
+    csdata,
+    lubridate
 Suggests: testthat,
     knitr,
-    rmarkdown,
-    lubridate
+    rmarkdown
 VignetteBuilder: knitr
 Config/Needs/website: niphr/cstemplate
 Config/roxygen2/version: 8.0.0
