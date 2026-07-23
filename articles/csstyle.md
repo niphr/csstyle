@@ -149,7 +149,7 @@ functions produce dates in the Norwegian `dd.mm.yyyy` style:
 ``` r
 # Current date
 format_date_as_nor()
-#> [1] "01.07.2026"
+#> [1] "23.07.2026"
 
 # Specific dates
 test_date <- as.Date("2023-12-25")
