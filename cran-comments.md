@@ -1,25 +1,26 @@
-## Resubmission
+## Submission
 
-This is a new package submission to CRAN.
+Update to version 2026.7.1.
+
+`save_a4()` now renders PNGs with the `ragg` AGG device instead of the default
+grDevices PNG device. This is markedly faster for busy, many-geom ggplots at
+full A4 / 300 dpi and produces cleaner text. Non-PNG filenames fall back to
+`ggsave()`'s extension-based device selection, so their behaviour is unchanged.
+`ragg` is added to Imports.
 
 ## Test environments
 
-* local Ubuntu 22.04.5 LTS, R 4.5.1
-* R-hub builder (via GitHub Actions)
-* win-builder (devel and release)
+* local Windows 11, R 4.4.2 (`R CMD check --no-manual --as-cran`)
+* GitHub Actions, ubuntu-latest, R release (`--no-manual --as-cran`)
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 notes
+0 errors | 0 warnings | 0 notes
 
-The 1 NOTEs are:
-
-1. "New submission" - Standard for new CRAN submissions
+The local run additionally reports "unable to verify current time". That is the
+offline clock check on a network without access to the time service, not a
+package problem; it does not appear on CI.
 
 ## Downstream dependencies
 
-None currently. This is a new submission to CRAN.
-
-## Additional notes
-
-We have now put ggplot2 and Core Surveillance in quotation marks as requested. We do not have reference about the methods used here.
+None.
