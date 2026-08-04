@@ -22,15 +22,15 @@ global$location_code_to_factor_label_if_not_unique <- "location_name_description
 #'   location_code_to_factor_label = "custom_name",
 #'   location_code_to_factor_label_if_not_unique = "custom_description"
 #' )
-#' 
+#'
 #' # Reset to defaults
 #' set_global()
 #' @family csstyle_utilities
 #' @export
 set_global <- function(
-    location_code_to_factor_label = "location_name",
-    location_code_to_factor_label_if_not_unique = "location_name_description_nb"
-){
+  location_code_to_factor_label = "location_name",
+  location_code_to_factor_label_if_not_unique = "location_name_description_nb"
+) {
   global$location_code_to_factor_label <- location_code_to_factor_label
   global$location_code_to_factor_label_if_not_unique <- location_code_to_factor_label_if_not_unique
 }
@@ -41,11 +41,14 @@ set_global <- function(
 #'   predefined color palettes used by the Core Surveillance styling functions.
 #' @format A list with the following elements:
 #' \describe{
-#'   \item{named_colors}{Named character vector of hex codes "H1" to "H12".}
+#'   \item{named_colors}{Named character vector of 12 colors, "H1" to "H12".
+#'     "H1" to "H7" are hex codes; "H8" to "H12" are R color names.}
 #'   \item{base}{The base color (element "H1" of \code{named_colors}).}
-#'   \item{palettes}{Named list of palettes. The \code{primary} palettes have
-#'     1 to 12 levels (\code{primary_1} to \code{primary_12}); \code{warning_3}
-#'     has 3 levels; \code{posneg_1} and \code{posneg_2} have 1 and 2 levels.}
+#'   \item{palettes}{Named list of palettes: \code{primary_1} to
+#'     \code{primary_12} (1 to 12 levels), \code{warning_3} (3 levels) and
+#'     \code{posneg_2} (2 levels). The \code{posneg} family has no 1-level
+#'     palette, so \code{scale_color_cs(palette = "posneg")} accepts 2 levels
+#'     only.}
 #'   \item{palette_names}{Character vector of the palette family names
 #'     ("primary", "posneg", "warning").}
 #' }

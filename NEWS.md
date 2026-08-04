@@ -1,3 +1,35 @@
+# Version 2026.8.4
+
+## Documentation
+
+* **`README.md` rewritten as a landing page.** It now carries installation, one
+  quick start, and a which-function-do-I-want table that routes all 52 exports
+  by task. Depth stays in `vignette("csstyle")`; the home page body stays in
+  `index.md`.
+* **`@seealso` now reaches every export.** Seven help pages carried none:
+  `format_date`, `format_date_as_journal`, `format_cstidy_age_as`,
+  `format_location_code_as`, `pretty_breaks`, `save_a4` and `view_html`. Each
+  `@family` on those four `@rdname` pages had every member on one page, so
+  roxygen2 emitted no `\seealso` at all. Where the vignette genuinely
+  demonstrates a function the new text names the section; where it does not, it
+  says so.
+* **`print.github_code()` examples now run.** They build a `github_code` object
+  directly instead of fetching one, so the page is no longer entirely
+  `\dontrun{}`. `as_github_code()` keeps `\dontrun{}`: `readLines()` fetches the
+  URL and needs an internet connection.
+
+## Bug fixes
+
+* **Corrected two false statements in the `colors` documentation.**
+  `named_colors` was described as twelve hex codes, but "H8" to "H12" are R
+  color names (`"blue"`, `"green"`, `"yellow"`, `"black"`, `"purple"`). The
+  palette list was described as containing `posneg_1`; it does not, so
+  `scale_color_cs(palette = "posneg")` accepts 2 levels only.
+
+## Maintenance
+
+* `^Rplots\.pdf$` added to `.Rbuildignore`.
+
 # Version 2026.7.1
 
 ## Performance

@@ -6,11 +6,14 @@
 \format{
 A list with the following elements:
 \describe{
-  \item{named_colors}{Named character vector of hex codes "H1" to "H12".}
+  \item{named_colors}{Named character vector of 12 colors, "H1" to "H12".
+    "H1" to "H7" are hex codes; "H8" to "H12" are R color names.}
   \item{base}{The base color (element "H1" of \code{named_colors}).}
-  \item{palettes}{Named list of palettes. The \code{primary} palettes have
-    1 to 12 levels (\code{primary_1} to \code{primary_12}); \code{warning_3}
-    has 3 levels; \code{posneg_1} and \code{posneg_2} have 1 and 2 levels.}
+  \item{palettes}{Named list of palettes: \code{primary_1} to
+    \code{primary_12} (1 to 12 levels), \code{warning_3} (3 levels) and
+    \code{posneg_2} (2 levels). The \code{posneg} family has no 1-level
+    palette, so \code{scale_color_cs(palette = "posneg")} accepts 2 levels
+    only.}
   \item{palette_names}{Character vector of the palette family names
     ("primary", "posneg", "warning").}
 }

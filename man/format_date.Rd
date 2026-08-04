@@ -35,4 +35,9 @@ format_datetime_as_nor()
 format_date_as_nor(as.Date("2023-12-25"))
 format_datetime_as_file(as.POSIXct("2023-12-25 14:30:00"))
 }
+\seealso{
+\code{\link{format_date_as_journal}} for the ISO 8601 equivalents.
+  The "Norwegian date format" section of \code{vignette("csstyle")}
+  demonstrates all three of these functions.
+}
 \concept{csstyle_date_formatters}

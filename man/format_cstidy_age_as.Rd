@@ -28,4 +28,9 @@ csstyle::format_cstidy_age_as_factor("005-014")
 csstyle::format_cstidy_age_as_character("009")
 csstyle::format_cstidy_age_as_character("005-014")
 }
+\seealso{
+\code{\link{format_location_code_as_factor}} for the same
+  factor/character pair applied to Norwegian location codes. These two age
+  functions are not demonstrated in \code{vignette("csstyle")}.
+}
 \concept{csstyle_age_formatters}

@@ -38,4 +38,10 @@ format_datetime_as_journal()
 format_date_as_journal(as.Date("2023-12-25"))
 format_datetime_as_journal_file(as.POSIXct("2023-12-25 14:30:00"))
 }
+\seealso{
+\code{\link{format_date_as_nor}} for the Norwegian equivalents. The
+  "Date format comparison" section of \code{vignette("csstyle")} demonstrates
+  \code{format_date_as_journal()} and \code{format_datetime_as_journal()};
+  \code{format_datetime_as_journal_file()} is not demonstrated there.
+}
 \concept{csstyle_journal_date_formatters}

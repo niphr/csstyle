@@ -27,11 +27,14 @@ Create a github_code object from a GitHub URL
 }
 \examples{
 \dontrun{
-# Requires an internet connection
+# Kept in \dontrun{}: readLines() fetches the URL, so this example needs an
+# internet connection.
 x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
 print(x, lines = 1:3)
 }
 }
 \seealso{
-\code{\link{print.github_code}}
+\code{\link{print.github_code}}, whose examples run without a
+  network connection. Neither function is demonstrated in
+  \code{vignette("csstyle")}.
 }

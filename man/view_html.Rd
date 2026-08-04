@@ -22,3 +22,7 @@ html_content <- "<h1>Hello World</h1><p>This is a test.</p>"
 view_html(html_content)
 }
 }
+\seealso{
+\code{vignette("csstyle")} for an overview of the package.
+  \code{view_html()} itself is not demonstrated there.
+}

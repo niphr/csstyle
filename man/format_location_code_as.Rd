@@ -50,4 +50,11 @@ format_location_code_as_factor(location_codes)
 format_location_code_as_character(location_codes)
 }
 }
+\seealso{
+\code{\link{set_global}} to change the default \code{label} and
+  \code{label_if_not_unique} columns, and
+  \code{\link{format_cstidy_age_as_factor}} for the same factor/character
+  pair applied to cstidy age codes. These two location functions are not
+  demonstrated in \code{vignette("csstyle")}.
+}
 \concept{csstyle_location_formatters}

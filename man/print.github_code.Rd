@@ -28,12 +28,19 @@ Prints the lines of a \code{github_code} object with line
 Print a github_code object
 }
 \examples{
-\dontrun{
-# Requires an internet connection
-x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
-print(x, lines = 1:3, include_url = TRUE)
-}
+# as_github_code() needs an internet connection, so this example builds an
+# equivalent github_code object directly.
+x <- c("a <- 1", "b <- 2", "a + b")
+attr(x, "pretty_url") <- "https://github.com/niphr/csstyle/blob/main/demo.R"
+attr(x, "class") <- c("github_code", class(x))
+
+# All lines, no link
+print(x)
+
+# A subset of lines, with the anchored GitHub link above them
+print(x, lines = 2:3, include_url = TRUE)
 }
 \seealso{
-\code{\link{as_github_code}}
+\code{\link{as_github_code}} to build such an object from a real
+  GitHub URL. Neither function is demonstrated in \code{vignette("csstyle")}.
 }

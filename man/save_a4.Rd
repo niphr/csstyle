@@ -43,3 +43,7 @@ save_a4(p, "myplot.png")
 save_a4(p, "myplot_large.png", landscape = FALSE, scaling_factor = 1.5)
 }
 }
+\seealso{
+\code{\link{theme_cs}} for the Core Surveillance plot theme.
+  \code{save_a4()} is not demonstrated in \code{vignette("csstyle")}.
+}

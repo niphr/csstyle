@@ -21,3 +21,4 @@ cran-comments.md
 ^CRAN-SUBMISSION$
 ^index\.md$
 ^pkgdown$
+^Rplots\.pdf$
