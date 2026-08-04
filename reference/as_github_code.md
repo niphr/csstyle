@@ -31,13 +31,17 @@ Create a github_code object from a GitHub URL
 
 ## See also
 
-[`print.github_code`](https://niphr.github.io/csstyle/reference/print.github_code.md)
+[`print.github_code`](https://niphr.github.io/csstyle/reference/print.github_code.md),
+whose examples run without a network connection. Neither function is
+demonstrated in
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
 
 ## Examples
 
 ``` r
 if (FALSE) { # \dontrun{
-# Requires an internet connection
+# Kept in \dontrun{}: readLines() fetches the URL, so this example needs an
+# internet connection.
 x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
 print(x, lines = 1:3)
 } # }

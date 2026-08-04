@@ -21,13 +21,13 @@ Source:
 [`DESCRIPTION`](https://github.com/niphr/csstyle/blob/main/DESCRIPTION)
 
 White RA, Berg-Hansen CV, Zhang C (2026). *csstyle: Standardizing
-Outputs in the 'Core Surveillance' Style*. R package version 2026.7.1,
+Outputs in the 'Core Surveillance' Style*. R package version 2026.8.4,
 <https://niphr.github.io/csstyle/>.
 
     @Manual{,
       title = {csstyle: Standardizing Outputs in the 'Core Surveillance' Style},
       author = {Richard Aubrey White and Celine Victoria Berg-Hansen and Chi Zhang},
       year = {2026},
-      note = {R package version 2026.7.1},
+      note = {R package version 2026.8.4},
       url = {https://niphr.github.io/csstyle/},
     }

@@ -57,6 +57,15 @@ Factor vector with Norwegian location names as labels
 
 Character vector with Norwegian location names
 
+## See also
+
+[`set_global`](https://niphr.github.io/csstyle/reference/set_global.md)
+to change the default `label` and `label_if_not_unique` columns, and
+[`format_cstidy_age_as_factor`](https://niphr.github.io/csstyle/reference/format_cstidy_age_as.md)
+for the same factor/character pair applied to cstidy age codes. These
+two location functions are not demonstrated in
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
+
 ## Examples
 
 ``` r

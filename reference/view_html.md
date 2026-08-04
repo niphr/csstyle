@@ -18,6 +18,12 @@ view_html(x)
 
 Nothing (called for side effects).
 
+## See also
+
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
+for an overview of the package. `view_html()` itself is not demonstrated
+there.
+
 ## Examples
 
 ``` r

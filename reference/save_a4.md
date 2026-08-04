@@ -38,6 +38,12 @@ which is markedly faster than the default \`grDevices\` PNG device for
 busy, many-geom ggplots (and gives cleaner text). Non-PNG filenames fall
 back to \`ggsave\`'s extension-based device selection.
 
+## See also
+
+[`theme_cs`](https://niphr.github.io/csstyle/reference/theme.md) for the
+Core Surveillance plot theme. `save_a4()` is not demonstrated in
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
+
 ## Examples
 
 ``` r

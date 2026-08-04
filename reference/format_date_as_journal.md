@@ -33,14 +33,23 @@ format_datetime_as_journal_file(
 
 Character vector with journal-formatted dates/datetimes
 
+## See also
+
+[`format_date_as_nor`](https://niphr.github.io/csstyle/reference/format_date.md)
+for the Norwegian equivalents. The "Date format comparison" section of
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
+demonstrates `format_date_as_journal()` and
+`format_datetime_as_journal()`; `format_datetime_as_journal_file()` is
+not demonstrated there.
+
 ## Examples
 
 ``` r
 # Format current date/time using journal conventions (ISO 8601)
 format_date_as_journal()
-#> [1] "2026-07-23"
+#> [1] "2026-08-04"
 format_datetime_as_journal()
-#> [1] "2026-07-23 10:18:40"
+#> [1] "2026-08-04 18:40:59"
 
 # Format specific dates
 format_date_as_journal(as.Date("2023-12-25"))

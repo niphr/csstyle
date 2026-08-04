@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">csstyle</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.8.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,14 +79,20 @@
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     <p>Character vector with formatted dates/datetimes</p>
     </div>
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p><code><a href="format_date_as_journal.html">format_date_as_journal</a></code> for the ISO 8601 equivalents.
+  The "Norwegian date format" section of <code><a href="../articles/csstyle.html">vignette("csstyle")</a></code>
+  demonstrates all three of these functions.</p></div>
+    </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Format current date/time using Norwegian conventions</span></span></span>
 <span class="r-in"><span><span class="fu">format_date_as_nor</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "23.07.2026"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "04.08.2026"</span>
 <span class="r-in"><span><span class="fu">format_datetime_as_nor</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "23.07.2026 kl. 10:40"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "04.08.2026 kl. 18:59"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Format specific dates</span></span></span>
 <span class="r-in"><span><span class="fu">format_date_as_nor</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2023-12-25"</span><span class="op">)</span><span class="op">)</span></span></span>

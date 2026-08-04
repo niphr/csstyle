@@ -26,6 +26,13 @@ Factor vector with Norwegian age labels (e.g., "9 år", "5-14 år")
 
 Character vector with Norwegian age labels (e.g., "9 år", "5-14 år")
 
+## See also
+
+[`format_location_code_as_factor`](https://niphr.github.io/csstyle/reference/format_location_code_as.md)
+for the same factor/character pair applied to Norwegian location codes.
+These two age functions are not demonstrated in
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
+
 ## Examples
 
 ``` r

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">csstyle</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.8.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +46,28 @@
       <small>Source: <a href="https://github.com/niphr/csstyle/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="2026.8.4" id="version-202684">Version 2026.8.4<a class="anchor" aria-label="anchor" href="#version-202684"></a></h2>
+<div class="section level3">
+<h3 id="documentation-2026-8-4">Documentation<a class="anchor" aria-label="anchor" href="#documentation-2026-8-4"></a></h3>
+<ul><li>
+<strong><code>README.md</code> rewritten as a landing page.</strong> It now carries installation, one quick start, and a which-function-do-I-want table that routes all 52 exports by task. Depth stays in <code><a href="../articles/csstyle.html">vignette("csstyle")</a></code>; the home page body stays in <code>index.md</code>.</li>
+<li>
+<strong><code>@seealso</code> now reaches every export.</strong> Seven help pages carried none: <code>format_date</code>, <code>format_date_as_journal</code>, <code>format_cstidy_age_as</code>, <code>format_location_code_as</code>, <code>pretty_breaks</code>, <code>save_a4</code> and <code>view_html</code>. Each <code>@family</code> on those four <code>@rdname</code> pages had every member on one page, so roxygen2 emitted no <code>\seealso</code> at all. Where the vignette genuinely demonstrates a function the new text names the section; where it does not, it says so.</li>
+<li>
+<strong><code><a href="../reference/print.github_code.html">print.github_code()</a></code> examples now run.</strong> They build a <code>github_code</code> object directly instead of fetching one, so the page is no longer entirely <code>\dontrun{}</code>. <code><a href="../reference/as_github_code.html">as_github_code()</a></code> keeps <code>\dontrun{}</code>: <code><a href="https://rdrr.io/r/base/readLines.html" class="external-link">readLines()</a></code> fetches the URL and needs an internet connection.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="bug-fixes-2026-8-4">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-2026-8-4"></a></h3>
+<ul><li>
+<strong>Corrected two false statements in the <code>colors</code> documentation.</strong> <code>named_colors</code> was described as twelve hex codes, but “H8” to “H12” are R color names (<code>"blue"</code>, <code>"green"</code>, <code>"yellow"</code>, <code>"black"</code>, <code>"purple"</code>). The palette list was described as containing <code>posneg_1</code>; it does not, so <code>scale_color_cs(palette = "posneg")</code> accepts 2 levels only.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="maintenance-2026-8-4">Maintenance<a class="anchor" aria-label="anchor" href="#maintenance-2026-8-4"></a></h3>
+<ul><li>
+<code>^Rplots\.pdf$</code> added to <code>.Rbuildignore</code>.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2026.7.1" id="version-202671">Version 2026.7.1<a class="anchor" aria-label="anchor" href="#version-202671"></a></h2>
 <div class="section level3">

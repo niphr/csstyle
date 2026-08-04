@@ -9,7 +9,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">csstyle</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.8.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,15 +62,18 @@
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
     <p>A list with the following elements:</p><dl><dt>named_colors</dt>
-<dd><p>Named character vector of hex codes "H1" to "H12".</p></dd>
+<dd><p>Named character vector of 12 colors, "H1" to "H12".
+    "H1" to "H7" are hex codes; "H8" to "H12" are R color names.</p></dd>
 
   <dt>base</dt>
 <dd><p>The base color (element "H1" of <code>named_colors</code>).</p></dd>
 
   <dt>palettes</dt>
-<dd><p>Named list of palettes. The <code>primary</code> palettes have
-    1 to 12 levels (<code>primary_1</code> to <code>primary_12</code>); <code>warning_3</code>
-    has 3 levels; <code>posneg_1</code> and <code>posneg_2</code> have 1 and 2 levels.</p></dd>
+<dd><p>Named list of palettes: <code>primary_1</code> to
+    <code>primary_12</code> (1 to 12 levels), <code>warning_3</code> (3 levels) and
+    <code>posneg_2</code> (2 levels). The <code>posneg</code> family has no 1-level
+    palette, so <code>scale_color_cs(palette = "posneg")</code> accepts 2 levels
+    only.</p></dd>
 
   <dt>palette_names</dt>
 <dd><p>Character vector of the palette family names

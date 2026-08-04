@@ -2,7 +2,7 @@
 
 ``` r
 library(csstyle)
-#> csstyle 2026.7.1
+#> csstyle 2026.8.4
 #> https://niphr.github.io/csstyle/
 library(ggplot2)
 ```
@@ -149,7 +149,7 @@ functions produce dates in the Norwegian `dd.mm.yyyy` style:
 ``` r
 # Current date
 format_date_as_nor()
-#> [1] "23.07.2026"
+#> [1] "04.08.2026"
 
 # Specific dates
 test_date <- as.Date("2023-12-25")

@@ -15,7 +15,8 @@ A list with the following elements:
 
 - named_colors:
 
-  Named character vector of hex codes "H1" to "H12".
+  Named character vector of 12 colors, "H1" to "H12". "H1" to "H7" are
+  hex codes; "H8" to "H12" are R color names.
 
 - base:
 
@@ -23,9 +24,10 @@ A list with the following elements:
 
 - palettes:
 
-  Named list of palettes. The `primary` palettes have 1 to 12 levels
-  (`primary_1` to `primary_12`); `warning_3` has 3 levels; `posneg_1`
-  and `posneg_2` have 1 and 2 levels.
+  Named list of palettes: `primary_1` to `primary_12` (1 to 12 levels),
+  `warning_3` (3 levels) and `posneg_2` (2 levels). The `posneg` family
+  has no 1-level palette, so `scale_color_cs(palette = "posneg")`
+  accepts 2 levels only.
 
 - palette_names:
 

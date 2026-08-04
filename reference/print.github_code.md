@@ -35,13 +35,29 @@ Print a github_code object
 ## See also
 
 [`as_github_code`](https://niphr.github.io/csstyle/reference/as_github_code.md)
+to build such an object from a real GitHub URL. Neither function is
+demonstrated in
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
 
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
-# Requires an internet connection
-x <- as_github_code("https://github.com/niphr/csstyle/blob/main/README.md")
-print(x, lines = 1:3, include_url = TRUE)
-} # }
+# as_github_code() needs an internet connection, so this example builds an
+# equivalent github_code object directly.
+x <- c("a <- 1", "b <- 2", "a + b")
+attr(x, "pretty_url") <- "https://github.com/niphr/csstyle/blob/main/demo.R"
+attr(x, "class") <- c("github_code", class(x))
+
+# All lines, no link
+print(x)
+#> 1 | a <- 1
+#> 2 | b <- 2
+#> 3 | a + b
+
+# A subset of lines, with the anchored GitHub link above them
+print(x, lines = 2:3, include_url = TRUE)
+#> https://github.com/niphr/csstyle/blob/main/demo.R#L2-L3
+#> 
+#> 2 | b <- 2
+#> 3 | a + b
 ```

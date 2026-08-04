@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">csstyle</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.8.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,14 +82,21 @@
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     <p>Character vector with journal-formatted dates/datetimes</p>
     </div>
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p><code><a href="format_date.html">format_date_as_nor</a></code> for the Norwegian equivalents. The
+  "Date format comparison" section of <code><a href="../articles/csstyle.html">vignette("csstyle")</a></code> demonstrates
+  <code>format_date_as_journal()</code> and <code>format_datetime_as_journal()</code>;
+  <code>format_datetime_as_journal_file()</code> is not demonstrated there.</p></div>
+    </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Format current date/time using journal conventions (ISO 8601)</span></span></span>
 <span class="r-in"><span><span class="fu">format_date_as_journal</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2026-07-23"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2026-08-04"</span>
 <span class="r-in"><span><span class="fu">format_datetime_as_journal</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2026-07-23 10:18:40"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2026-08-04 18:40:59"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Format specific dates</span></span></span>
 <span class="r-in"><span><span class="fu">format_date_as_journal</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2023-12-25"</span><span class="op">)</span><span class="op">)</span></span></span>
