@@ -1,11 +1,32 @@
 Package: csstyle
 Title: Standardizing Outputs in the 'Core Surveillance' Style
 Version: 2026.8.6
-Authors@R: c(
-  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")), 
-  person(c("Celine","Victoria"), "Berg-Hansen", role = c("aut"), comment = c(ORCID = "0000-0002-0033-2019")),
-  person(c("Chi"), "Zhang", email = "andreachizhang@yahoo.com", role = c("aut"))
-  )
+Authors@R:
+    c(
+      person(
+        given = c("Richard", "Aubrey"),
+        family = "White",
+        email = "hello@rwhite.no",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-6747-1726")
+      ),
+      person(
+        given = c("Celine", "Victoria"),
+        family = "Berg-Hansen",
+        role = "aut",
+        comment = c(ORCID = "0000-0002-0033-2019")
+      ),
+      person(
+        given = "Chi",
+        family = "Zhang",
+        email = "andreachizhang@yahoo.com",
+        role = "aut"
+      ),
+      person(
+        given = "Folkehelseinstituttet",
+        role = "cph"
+      )
+    )
 Description: A comprehensive styling system for consistent visual outputs using 'Core Surveillance' guidelines. 
     Provides 'ggplot2' themes, color palettes, and dual formatting functions to standardize 
     graphs, tables, and reports. Includes Norwegian formatting conventions for domestic 
