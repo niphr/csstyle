@@ -1,5 +1,31 @@
 # Changelog
 
+## Version 2026.8.6
+
+### Documentation
+
+- **All repository prose rewritten to ASD-STE100 (Simplified Technical
+  English).** The pass covers the roxygen2 blocks in `R/`,
+  `vignettes/csstyle.Rmd`, `README.md` and `index.md`. Long sentences
+  are split, passive voice is made active, and every `@param` and
+  `@returns` entry is now a terminated sentence. No claim changed. No
+  executable line changed.
+- **One term per concept.** “decimal places” replaces “digits” in the 30
+  `format_num_*` titles. “palette family” now names “primary”, “warning”
+  and “posneg” on the
+  [`scale_color_cs()`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
+  and
+  [`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md)
+  pages, which matches the wording on the `colors` page. “color”
+  replaces “colour” in `index.md`. “plot” replaces “visualization” and
+  “figure”.
+- **`README.md` says “All 52 exports”, not “All 52 exported
+  functions”.** One of the 52 is `colors`, which is a list, so the old
+  wording was wrong.
+- **The duplicate `@title` tags are gone from `R/github_code.R`.** Both
+  blocks carried a `@title` that repeated the implicit title line. The
+  generated `.Rd` files are unchanged.
+
 ## Version 2026.8.4
 
 ### Documentation

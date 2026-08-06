@@ -26,7 +26,7 @@
 - [`every_nth()`](https://niphr.github.io/csstyle/reference/every_nth.md)
   : Returns every nth discrete value
 - [`save_a4()`](https://niphr.github.io/csstyle/reference/save_a4.md) :
-  Save ggplot in A4 scale
+  Save a ggplot2 plot at A4 size
 
 ## Norwegian formatting
 
@@ -35,27 +35,29 @@
 - [`format_num_as_nor_num_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
   [`format_num_as_nor_num_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
   [`format_num_as_nor_num_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
-  : Format numbers with Norwegian conventions (0 digits)
+  : Format numbers with Norwegian conventions (0 decimal places)
 - [`format_num_as_nor_perc_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_perc.md)
   [`format_num_as_nor_perc_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_perc.md)
   [`format_num_as_nor_perc_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_perc.md)
-  : Format numbers as percentages with Norwegian conventions (0 digits)
+  : Format numbers as percentages with Norwegian conventions (0 decimal
+  places)
 - [`format_num_as_nor_per100k_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_per100k.md)
   [`format_num_as_nor_per100k_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_per100k.md)
   [`format_num_as_nor_per100k_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_per100k.md)
-  : Format numbers per 100k with Norwegian conventions (0 digits)
+  : Format numbers per 100k with Norwegian conventions (0 decimal
+  places)
 - [`format_num_as_nor_invlog2_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog2.md)
   [`format_num_as_nor_invlog2_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog2.md)
   : Format numbers on inverse log-2 scale with Norwegian conventions (1
-  digit)
+  decimal place)
 - [`format_num_as_nor_invlog10_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog10.md)
   [`format_num_as_nor_invlog10_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invlog10.md)
   : Format numbers on inverse log-10 scale with Norwegian conventions (1
-  digit)
+  decimal place)
 - [`format_num_as_nor_invloge_1()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invloge.md)
   [`format_num_as_nor_invloge_2()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_invloge.md)
   : Format numbers on inverse natural log scale with Norwegian
-  conventions (1 digit)
+  conventions (1 decimal place)
 - [`format_cstidy_age_as_factor()`](https://niphr.github.io/csstyle/reference/format_cstidy_age_as.md)
   [`format_cstidy_age_as_character()`](https://niphr.github.io/csstyle/reference/format_cstidy_age_as.md)
   : Format cstidy age codes as factor with Norwegian text
@@ -77,27 +79,28 @@
 - [`format_num_as_journal_num_0()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_num.md)
   [`format_num_as_journal_num_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_num.md)
   [`format_num_as_journal_num_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_num.md)
-  : Format numbers with journal conventions (0 digits)
+  : Format numbers with journal conventions (0 decimal places)
 - [`format_num_as_journal_perc_0()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_perc.md)
   [`format_num_as_journal_perc_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_perc.md)
   [`format_num_as_journal_perc_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_perc.md)
-  : Format numbers as percentages with journal conventions (0 digits)
+  : Format numbers as percentages with journal conventions (0 decimal
+  places)
 - [`format_num_as_journal_per100k_0()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_per100k.md)
   [`format_num_as_journal_per100k_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_per100k.md)
   [`format_num_as_journal_per100k_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_per100k.md)
-  : Format numbers per 100k with journal conventions (0 digits)
+  : Format numbers per 100k with journal conventions (0 decimal places)
 - [`format_num_as_journal_invlog2_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog2.md)
   [`format_num_as_journal_invlog2_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog2.md)
   : Format numbers on inverse log-2 scale with journal conventions (1
-  digit)
+  decimal place)
 - [`format_num_as_journal_invlog10_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog10.md)
   [`format_num_as_journal_invlog10_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invlog10.md)
   : Format numbers on inverse log-10 scale with journal conventions (1
-  digit)
+  decimal place)
 - [`format_num_as_journal_invloge_1()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invloge.md)
   [`format_num_as_journal_invloge_2()`](https://niphr.github.io/csstyle/reference/format_num_as_journal_invloge.md)
   : Format numbers on inverse natural log scale with journal conventions
-  (1 digit)
+  (1 decimal place)
 
 ### Dates and times
 

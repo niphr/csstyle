@@ -1,6 +1,6 @@
 # Pretty breaks
 
-Creates a function for generating pretty axis breaks with Norwegian
+Creates a function that generates pretty axis breaks with Norwegian
 number formatting.
 
 ## Usage
@@ -13,30 +13,30 @@ pretty_breaks(n = 5, formatting_fn = csstyle::format_num_as_nor_num_0, ...)
 
 - n:
 
-  Number of desired breaks (default: 5)
+  Number of desired breaks. Default 5.
 
 - formatting_fn:
 
-  Formatting function to apply to break labels (default: Norwegian
-  number formatting)
+  Function applied to the break labels. Default
+  [`format_num_as_nor_num_0()`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md).
 
 - ...:
 
-  Additional arguments passed to pretty()
+  Further arguments passed to
+  [`pretty()`](https://rdrr.io/r/base/pretty.html).
 
 ## Value
 
-A function that can be used for breaks on graphing.
+A function that you can use for axis breaks.
 
 ## See also
 
-[`format_num_as_nor_num_0`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md),
-the default `formatting_fn`, and
-[`every_nth`](https://niphr.github.io/csstyle/reference/every_nth.md),
-which thins labels on a discrete axis instead. The "Pretty breaks"
-section of
+[`format_num_as_nor_num_0`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
+is the default `formatting_fn`.
+[`every_nth`](https://niphr.github.io/csstyle/reference/every_nth.md)
+thins labels on a discrete axis instead. The "Pretty breaks" section of
 [`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
-demonstrates this function.
+demonstrates `pretty_breaks()`.
 
 ## Examples
 

@@ -1,7 +1,7 @@
 # Print a github_code object
 
 Prints the lines of a `github_code` object with line numbers. Use the
-`lines` argument to print a subset of lines, and `include_url` or
+`lines` argument to print a subset of the lines. Use `include_url` or
 `include_url_as_link` to also print a link back to the file on GitHub.
 
 ## Usage
@@ -20,24 +20,21 @@ print(x, ...)
 
 - ...:
 
-  Further arguments controlling the output: `lines` (integer vector of
-  line numbers to print), `include_url` (logical; print the GitHub
-  link), and `include_url_as_link` (logical; print the link as HTML).
+  Further arguments that control the output. `lines` is an integer
+  vector of the line numbers to print. `include_url` is logical. Set it
+  to `TRUE` to also print the GitHub link. `include_url_as_link` is
+  logical. Set it to `TRUE` to print the GitHub link as HTML.
 
 ## Value
 
 The input `x`, invisibly.
 
-## Details
-
-Print a github_code object
-
 ## See also
 
 [`as_github_code`](https://niphr.github.io/csstyle/reference/as_github_code.md)
-to build such an object from a real GitHub URL. Neither function is
-demonstrated in
-[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
+builds such an object from a real GitHub URL.
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
+demonstrates neither function.
 
 ## Examples
 

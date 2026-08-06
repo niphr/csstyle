@@ -1,6 +1,6 @@
 # Returns every nth discrete value
 
-Creates a function that returns every nth element from a vector, useful
+Creates a function that returns every nth element of a vector. Use it
 for axis breaks in ggplot2.
 
 ## Usage
@@ -13,8 +13,7 @@ every_nth(n)
 
 - n:
 
-  Integer specifying which nth value to return (e.g., n=2 returns every
-  2nd value)
+  Integer. Which nth value to return: `n = 2` returns every 2nd value.
 
 ## Value
 

@@ -12,7 +12,7 @@ view_html(x)
 
 - x:
 
-  Character string containing HTML content to display
+  Character string. The HTML content to show.
 
 ## Value
 
@@ -21,8 +21,7 @@ Nothing (called for side effects).
 ## See also
 
 [`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
-for an overview of the package. `view_html()` itself is not demonstrated
-there.
+gives an overview of the package. It does not demonstrate `view_html()`.
 
 ## Examples
 

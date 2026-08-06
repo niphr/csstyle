@@ -1,7 +1,7 @@
 # Format date and datetime using journal conventions (ISO 8601)
 
-Functions for formatting dates and datetimes using ISO 8601 journal
-conventions.
+Formats dates and datetimes with the ISO 8601 conventions that journals
+use.
 
 ## Usage
 
@@ -23,33 +23,33 @@ format_datetime_as_journal_file(
 
 - x:
 
-  Date or datetime object to format
+  Date or datetime object to format.
 
 - format:
 
-  Character string specifying the desired format
+  Character string that sets the output format.
 
 ## Value
 
-Character vector with journal-formatted dates/datetimes
+Character vector of journal-formatted dates and datetimes.
 
 ## See also
 
 [`format_date_as_nor`](https://niphr.github.io/csstyle/reference/format_date.md)
-for the Norwegian equivalents. The "Date format comparison" section of
+gives the Norwegian equivalents. The "Date format comparison" section of
 [`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
 demonstrates `format_date_as_journal()` and
-`format_datetime_as_journal()`; `format_datetime_as_journal_file()` is
-not demonstrated there.
+`format_datetime_as_journal()`. That section does not demonstrate
+`format_datetime_as_journal_file()`.
 
 ## Examples
 
 ``` r
 # Format current date/time using journal conventions (ISO 8601)
 format_date_as_journal()
-#> [1] "2026-08-04"
+#> [1] "2026-08-06"
 format_datetime_as_journal()
-#> [1] "2026-08-04 18:40:59"
+#> [1] "2026-08-06 08:08:06"
 
 # Format specific dates
 format_date_as_journal(as.Date("2023-12-25"))

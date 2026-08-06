@@ -1,9 +1,9 @@
 # Convert Norwegian location codes to factor with readable labels
 
-Converts Norwegian location codes (municipality/county codes) to factors
-with human-readable Norwegian location names.
+Converts Norwegian location codes (municipality and county codes) to a
+factor with human-readable location names.
 
-Converts Norwegian location codes to character vector with
+Converts Norwegian location codes to a character vector of
 human-readable Norwegian location names.
 
 ## Usage
@@ -30,41 +30,42 @@ format_location_code_as_character(
 
 - x:
 
-  Character vector of Norwegian location codes
+  Character vector of Norwegian location codes.
 
 - label:
 
-  Column name from reference data to use for labels (default: uses
-  global setting)
+  Column name in the reference data to use for labels. Defaults to the
+  global setting.
 
 - label_if_not_unique:
 
-  Column name to use when location names are not unique (default: uses
-  global setting)
+  Column name to use when the location names are not unique. Defaults to
+  the global setting.
 
 - reference:
 
-  Data.table with location reference data (default:
-  csdata::nor_locations_names())
+  Data.table of location reference data. Default
+  [`csdata::nor_locations_names()`](https://niphr.github.io/csdata/reference/nor_locations_names.html).
 
 - direction:
 
-  Integer: 1 for normal order, -1 for reversed order (default: 1)
+  Integer. Use 1 for the normal order and -1 for the reversed order.
+  Default 1.
 
 ## Value
 
-Factor vector with Norwegian location names as labels
+Factor vector with Norwegian location names as labels.
 
-Character vector with Norwegian location names
+Character vector of Norwegian location names.
 
 ## See also
 
 [`set_global`](https://niphr.github.io/csstyle/reference/set_global.md)
-to change the default `label` and `label_if_not_unique` columns, and
+changes the default `label` and `label_if_not_unique` columns.
 [`format_cstidy_age_as_factor`](https://niphr.github.io/csstyle/reference/format_cstidy_age_as.md)
-for the same factor/character pair applied to cstidy age codes. These
-two location functions are not demonstrated in
-[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
+applies the same factor and character pair to cstidy age codes.
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
+does not demonstrate these two location functions.
 
 ## Examples
 

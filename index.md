@@ -9,13 +9,13 @@ position, and axis orientation.
 
 02
 
-### Colour Palettes
+### Color Palettes
 
-Named colour scales (primary, warning, posneg) wired directly into
-ggplot2 via
+Named color palette families (primary, warning, posneg).
 [`scale_color_cs()`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
 and
-[`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md).
+[`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md)
+apply them in ggplot2.
 
 03
 
@@ -26,6 +26,6 @@ international journal publications.
 
 Palettes
 
-![The csstyle colour palettes](gallery/palette.png)
+![The csstyle color palettes](gallery/palette.png)
 
-The csstyle colour palettes
+The csstyle color palettes

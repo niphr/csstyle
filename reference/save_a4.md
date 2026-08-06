@@ -1,4 +1,4 @@
-# Save ggplot in A4 scale
+# Save a ggplot2 plot at A4 size
 
 Saves a ggplot2 plot with A4 paper dimensions.
 
@@ -12,20 +12,19 @@ save_a4(q, filename, landscape = T, scaling_factor = 1)
 
 - q:
 
-  ggplot2 plot object to save
+  ggplot2 plot object to save.
 
 - filename:
 
-  Character string specifying the output filename (with extension)
+  Character string. The output filename, including the extension.
 
 - landscape:
 
-  Logical indicating if plot should use landscape orientation (default:
-  TRUE)
+  Logical. Set to `TRUE` for landscape orientation. Default `TRUE`.
 
 - scaling_factor:
 
-  Numeric scaling factor for A4 dimensions (default: 1)
+  Numeric. Scales the A4 dimensions. Default 1.
 
 ## Value
 
@@ -33,16 +32,20 @@ Nothing (called for side effects).
 
 ## Details
 
-PNG output is rendered with the \`ragg\` AGG device (\`ragg::agg_png\`),
-which is markedly faster than the default \`grDevices\` PNG device for
-busy, many-geom ggplots (and gives cleaner text). Non-PNG filenames fall
-back to \`ggsave\`'s extension-based device selection.
+`save_a4()` renders PNG output with the `ragg` AGG device,
+[`ragg::agg_png`](https://ragg.r-lib.org/reference/agg_png.html). That
+device is markedly faster than the default `grDevices` PNG device for
+busy, many-geom ggplot2 plots, and it gives cleaner text. For a filename
+that is not a PNG,
+[`ggsave()`](https://ggplot2.tidyverse.org/reference/ggsave.html)
+selects the device from the extension.
 
 ## See also
 
-[`theme_cs`](https://niphr.github.io/csstyle/reference/theme.md) for the
-Core Surveillance plot theme. `save_a4()` is not demonstrated in
-[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md).
+[`theme_cs`](https://niphr.github.io/csstyle/reference/theme.md) is the
+Core Surveillance plot theme.
+[`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
+does not demonstrate `save_a4()`.
 
 ## Examples
 
@@ -50,8 +53,8 @@ Core Surveillance plot theme. `save_a4()` is not demonstrated in
 library(ggplot2)
 
 # Create a plot
-p <- ggplot(mtcars, aes(x = mpg, y = hp)) + 
-  geom_point() + 
+p <- ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
   theme_cs()
 
 if (FALSE) { # \dontrun{

@@ -1,10 +1,10 @@
-# Format numbers on inverse log-10 scale with Norwegian conventions (1 digit)
+# Format numbers on inverse log-10 scale with Norwegian conventions (1 decimal place)
 
-Formats values by applying 10^x transformation then formatting with
-Norwegian conventions and 1 decimal place.
+Applies `10^x`, then formats with Norwegian conventions and 1 decimal
+place.
 
-Formats values by applying 10^x transformation then formatting with
-Norwegian conventions and 2 decimal places.
+Applies `10^x`, then formats with Norwegian conventions and 2 decimal
+places.
 
 ## Usage
 
@@ -18,13 +18,13 @@ format_num_as_nor_invlog10_2(x)
 
 - x:
 
-  Numeric vector (log-10 scale values)
+  Numeric vector of values on the log-10 scale.
 
 ## Value
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
 ## See also
 

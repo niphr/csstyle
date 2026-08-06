@@ -2,20 +2,19 @@
 
 ``` r
 library(csstyle)
-#> csstyle 2026.8.4
+#> csstyle 2026.8.6
 #> https://niphr.github.io/csstyle/
 library(ggplot2)
 ```
 
 ## Overview
 
-`csstyle` standardizes graphs, tables, and reports to follow Core
-Surveillance visual guidelines. The design is intentionally narrow:
-rather than exposing every ggplot2 option, the package offers a small
-set of outputs that look the same regardless of who produces them or
-when.
+`csstyle` standardizes graphs, tables, and reports to follow the Core
+Surveillance visual guidelines. The design is deliberately narrow. The
+package does not expose every ggplot2 option. It offers a small set of
+outputs that look the same, whoever produces them and whenever.
 
-The package covers four areas:
+The package covers four areas.
 
 - ggplot2 themes and color scales
 - Color palettes defined centrally and applied consistently
@@ -25,9 +24,9 @@ The package covers four areas:
 
 ## Themes
 
-The main theme function is
-[`theme_cs()`](https://niphr.github.io/csstyle/reference/theme.md),
-which applies a clean Core Surveillance appearance to any ggplot2 plot:
+[`theme_cs()`](https://niphr.github.io/csstyle/reference/theme.md) is
+the main theme function. It applies the Core Surveillance appearance to
+any ggplot2 plot.
 
 ``` r
 # Basic scatter plot with Core Surveillance theme
@@ -43,7 +42,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
 
 ![](csstyle_files/figure-html/theme-example-1.png)
 
-A few arguments adjust the layout without breaking the overall style:
+A few arguments adjust the layout without breaking the overall style.
 
 ``` r
 # Theme with bottom legend and vertical x-axis labels
@@ -57,8 +56,7 @@ ggplot(mtcars, aes(x = factor(cyl), y = mpg, fill = factor(cyl))) +
 
 ## Color palettes
 
-The package ships several predefined palettes. You can inspect them
-directly:
+The package ships several predefined palettes. Inspect them directly.
 
 ``` r
 # View available colors
@@ -75,7 +73,7 @@ display_all_palettes()
 Apply a palette to a plot with
 [`scale_color_cs()`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
 or
-[`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md):
+[`scale_fill_cs()`](https://niphr.github.io/csstyle/reference/scale_fill_cs.md).
 
 ``` r
 # Using the primary color palette
@@ -101,17 +99,17 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(cyl))) +
 
 ## Number formatting
 
-All number formatting functions come in two parallel families that
-reflect their intended audience: Norwegian conventions for domestic
-reports, and journal conventions for international academic
-publications. See the “Journal formatting” section below for a
-side-by-side comparison.
+Every number formatting function belongs to one of two parallel
+families. The two families reflect the intended audience. The Norwegian
+family follows domestic conventions. The journal family follows
+international conventions for academic publications. The “Journal
+formatting” section below compares the two side by side.
 
 ### Norwegian number format
 
 The `format_num_as_nor_*` functions use a comma for the decimal
 separator, a space for thousands, and `"IK"` (ikke kjent) for missing
-values:
+values.
 
 ``` r
 # Format numbers with Norwegian conventions
@@ -144,12 +142,12 @@ The
 [`format_date_as_nor()`](https://niphr.github.io/csstyle/reference/format_date.md)
 and
 [`format_datetime_as_nor()`](https://niphr.github.io/csstyle/reference/format_date.md)
-functions produce dates in the Norwegian `dd.mm.yyyy` style:
+functions produce dates in the Norwegian `dd.mm.yyyy` style.
 
 ``` r
 # Current date
 format_date_as_nor()
-#> [1] "04.08.2026"
+#> [1] "06.08.2026"
 
 # Specific dates
 test_date <- as.Date("2023-12-25")
@@ -169,8 +167,8 @@ format_datetime_as_file(test_datetime)
 ## Journal formatting
 
 For academic publications the package provides a parallel set of
-functions that follow international conventions: a decimal point, comma
-thousands separator, `"NA"` for missing values, and ISO 8601 dates.
+functions. They use a decimal point, a comma thousands separator, `"NA"`
+for missing values, and ISO 8601 dates.
 
 ### Number format comparison
 
@@ -228,9 +226,9 @@ format_datetime_as_journal(test_datetime)  # "2023-12-25 14:30:00"
 
 ### Log scale transformations
 
-Both families include inverse log transformation variants, useful when
-axis values are on a log scale and you want to display the original
-units in labels:
+Both families include inverse log transformation variants. Use them when
+the axis values are on a log scale and you want the labels to show the
+original units.
 
 ``` r
 log_values <- c(1, 2, 3)
@@ -251,7 +249,7 @@ format_num_as_journal_invlog10_1(log_values) # "10.0", "100.0", "1,000.0"
 ### Pretty breaks
 
 [`pretty_breaks()`](https://niphr.github.io/csstyle/reference/pretty_breaks.md)
-generates axis break positions that round to human-friendly values:
+generates axis break positions that round to human-friendly values.
 
 ``` r
 ggplot(mtcars, aes(x = mpg, y = hp)) +
@@ -266,7 +264,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
 
 On crowded discrete axes,
 [`every_nth()`](https://niphr.github.io/csstyle/reference/every_nth.md)
-keeps only every nth tick label and drops the rest:
+keeps only every nth tick label and drops the rest.
 
 ``` r
 ggplot(mtcars, aes(x = rownames(mtcars), y = mpg)) +
@@ -280,10 +278,11 @@ ggplot(mtcars, aes(x = rownames(mtcars), y = mpg)) +
 
 ## Further reading
 
-Function-level documentation is available via
+Run
 [`help(package = "csstyle")`](https://niphr.github.io/csstyle/reference)
-or individual help pages such as
+for the full function list. Individual help pages such as
 [`?theme_cs`](https://niphr.github.io/csstyle/reference/theme.md),
-[`?scale_color_cs`](https://niphr.github.io/csstyle/reference/scale_color_cs.md),
+[`?scale_color_cs`](https://niphr.github.io/csstyle/reference/scale_color_cs.md)
 and
-[`?format_num_as_nor_num_1`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md).
+[`?format_num_as_nor_num_1`](https://niphr.github.io/csstyle/reference/format_num_as_nor_num.md)
+document single functions.

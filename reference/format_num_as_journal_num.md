@@ -1,13 +1,10 @@
-# Format numbers with journal conventions (0 digits)
+# Format numbers with journal conventions (0 decimal places)
 
-Formats numeric values using journal number conventions with 0 decimal
-places.
+Formats numeric values with journal conventions and 0 decimal places.
 
-Formats numeric values using journal number conventions with 1 decimal
-place.
+Formats numeric values with journal conventions and 1 decimal place.
 
-Formats numeric values using journal number conventions with 2 decimal
-places.
+Formats numeric values with journal conventions and 2 decimal places.
 
 ## Usage
 
@@ -23,15 +20,15 @@ format_num_as_journal_num_2(x)
 
 - x:
 
-  Numeric vector to format
+  Numeric vector to format.
 
 ## Value
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
 ## See also
 

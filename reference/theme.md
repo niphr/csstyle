@@ -1,10 +1,10 @@
 # Core Surveillance ggplot2 theme for consistent styling
 
-Custom ggplot2 theme following Core Surveillance visual guidelines with
-configurable grid lines and formatting.
+A ggplot2 theme that follows the Core Surveillance visual guidelines.
+You can configure the grid lines and the formatting.
 
-Returns a ggplot2 theme component that rotates the x-axis tick labels to
-be vertical. Add it to a plot like any other theme element.
+Returns a ggplot2 theme component that turns the x-axis tick labels
+vertical. Add it to a plot as you add any other theme element.
 
 ## Usage
 
@@ -30,54 +30,61 @@ set_x_axis_vertical()
 
 - base_size:
 
-  Base font size in points (default: 16)
+  Base font size in points. Default 16.
 
 - base_family:
 
-  Base font family (default: "")
+  Base font family. Default `""`.
 
 - base_line_size:
 
-  Base line size relative to base_size (default: base_size/22)
+  Base line size, relative to `base_size`. Default `base_size / 22`.
 
 - base_rect_size:
 
-  Base rectangle size relative to base_size (default: base_size/22)
+  Base rectangle size, relative to `base_size`. Default
+  `base_size / 22`.
 
 - legend_position:
 
-  Position of legend: "right", "left", "top", "bottom", or "none"
-  (default: "right")
+  Position of the legend. One of "right", "left", "top", "bottom" or
+  "none". Default "right".
 
 - x_axis_vertical:
 
-  Logical: should x-axis labels be vertical? (default: FALSE)
+  Logical. Set to `TRUE` to turn the x-axis labels vertical. Default
+  `FALSE`.
 
 - panel_on_top:
 
-  Logical: should panel be drawn on top of data? (default: TRUE)
+  Logical. Set to `TRUE` to draw the panel on top of the data. Default
+  `TRUE`.
 
 - panel.grid.major.x:
 
-  Logical or element: major vertical grid lines (default: FALSE)
+  Logical, or a ggplot2 element. Major vertical grid lines. Default
+  `FALSE`.
 
 - panel.grid.minor.x:
 
-  Logical or element: minor vertical grid lines (default: FALSE)
+  Logical, or a ggplot2 element. Minor vertical grid lines. Default
+  `FALSE`.
 
 - panel.grid.major.y:
 
-  Logical or element: major horizontal grid lines (default: TRUE)
+  Logical, or a ggplot2 element. Major horizontal grid lines. Default
+  `TRUE`.
 
 - panel.grid.minor.y:
 
-  Logical or element: minor horizontal grid lines (default: TRUE)
+  Logical, or a ggplot2 element. Minor horizontal grid lines. Default
+  `TRUE`.
 
 ## Value
 
-Complete ggplot2 theme object
+A complete ggplot2 theme object.
 
-A ggplot2 theme component that can be added to a plot.
+A ggplot2 theme component that you can add to a plot.
 
 ## See also
 

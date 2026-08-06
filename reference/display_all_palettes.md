@@ -1,7 +1,7 @@
 # Display all available color palettes
 
-Creates a visualization showing all available Core Surveillance color
-palettes with their color codes and names.
+Creates a plot that shows all available Core Surveillance color palettes
+with their color codes and names.
 
 ## Usage
 
@@ -11,7 +11,7 @@ display_all_palettes()
 
 ## Value
 
-A ggplot2 plot displaying all color palettes
+A ggplot2 plot that shows all the color palettes.
 
 ## See also
 

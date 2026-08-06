@@ -1,7 +1,8 @@
 # Color definitions for Core Surveillance styling
 
-A list holding the named colors, the base color, and the predefined
-color palettes used by the Core Surveillance styling functions.
+A list of the named colors, the base color, and the predefined color
+palettes. The Core Surveillance styling functions take their colors from
+this list.
 
 ## Usage
 
@@ -16,11 +17,11 @@ A list with the following elements:
 - named_colors:
 
   Named character vector of 12 colors, "H1" to "H12". "H1" to "H7" are
-  hex codes; "H8" to "H12" are R color names.
+  hex codes. "H8" to "H12" are R color names.
 
 - base:
 
-  The base color (element "H1" of `named_colors`).
+  The base color, element "H1" of `named_colors`.
 
 - palettes:
 

@@ -1,10 +1,10 @@
-# Format numbers on inverse natural log scale with journal conventions (1 digit)
+# Format numbers on inverse natural log scale with journal conventions (1 decimal place)
 
-Formats values by applying exp(x) transformation then formatting with
-journal conventions and 1 decimal place.
+Applies `exp(x)`, then formats with journal conventions and 1 decimal
+place.
 
-Formats values by applying exp(x) transformation then formatting with
-journal conventions and 2 decimal places.
+Applies `exp(x)`, then formats with journal conventions and 2 decimal
+places.
 
 ## Usage
 
@@ -18,13 +18,13 @@ format_num_as_journal_invloge_2(x)
 
 - x:
 
-  Numeric vector (natural log scale values)
+  Numeric vector of values on the natural log scale.
 
 ## Value
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
 ## See also
 

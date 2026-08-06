@@ -1,7 +1,7 @@
 # Format date and datetime using Norwegian conventions
 
-Functions for formatting dates and datetimes using Norwegian conventions
-or for safe filename use.
+Formats dates and datetimes with Norwegian conventions, or with a
+filename-safe format.
 
 ## Usage
 
@@ -20,31 +20,31 @@ format_datetime_as_file(x = lubridate::now(), format = "%Y_%m_%d_%H%M%S")
 
 - x:
 
-  Date or datetime object to format
+  Date or datetime object to format.
 
 - format:
 
-  Character string specifying the desired format
+  Character string that sets the output format.
 
 ## Value
 
-Character vector with formatted dates/datetimes
+Character vector of formatted dates and datetimes.
 
 ## See also
 
 [`format_date_as_journal`](https://niphr.github.io/csstyle/reference/format_date_as_journal.md)
-for the ISO 8601 equivalents. The "Norwegian date format" section of
+gives the ISO 8601 equivalents. The "Norwegian date format" section of
 [`vignette("csstyle")`](https://niphr.github.io/csstyle/articles/csstyle.md)
-demonstrates all three of these functions.
+demonstrates all three functions on this page.
 
 ## Examples
 
 ``` r
 # Format current date/time using Norwegian conventions
 format_date_as_nor()
-#> [1] "04.08.2026"
+#> [1] "06.08.2026"
 format_datetime_as_nor()
-#> [1] "04.08.2026 kl. 18:59"
+#> [1] "06.08.2026 kl. 08:06"
 
 # Format specific dates
 format_date_as_nor(as.Date("2023-12-25"))

@@ -1,13 +1,13 @@
-# Format numbers as percentages with journal conventions (0 digits)
+# Format numbers as percentages with journal conventions (0 decimal places)
 
-Formats numeric values as percentages using journal number conventions
-with 0 decimal places.
+Formats numeric values as percentages with journal conventions and 0
+decimal places.
 
-Formats numeric values as percentages using journal number conventions
-with 1 decimal place.
+Formats numeric values as percentages with journal conventions and 1
+decimal place.
 
-Formats numeric values as percentages using journal number conventions
-with 2 decimal places.
+Formats numeric values as percentages with journal conventions and 2
+decimal places.
 
 ## Usage
 
@@ -23,15 +23,15 @@ format_num_as_journal_perc_2(x)
 
 - x:
 
-  Numeric vector to format
+  Numeric vector to format.
 
 ## Value
 
-Character vector with journal-formatted numbers and "
+Character vector of journal-formatted numbers with a "
 
-Character vector with journal-formatted numbers and "
+Character vector of journal-formatted numbers with a "
 
-Character vector with journal-formatted numbers and "
+Character vector of journal-formatted numbers with a "
 
 ## See also
 

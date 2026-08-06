@@ -1,13 +1,10 @@
-# Format numbers with Norwegian conventions (0 digits)
+# Format numbers with Norwegian conventions (0 decimal places)
 
-Formats numeric values using Norwegian number conventions with 0 decimal
-places.
+Formats numeric values with Norwegian conventions and 0 decimal places.
 
-Formats numeric values using Norwegian number conventions with 1 decimal
-place.
+Formats numeric values with Norwegian conventions and 1 decimal place.
 
-Formats numeric values using Norwegian number conventions with 2 decimal
-places.
+Formats numeric values with Norwegian conventions and 2 decimal places.
 
 ## Usage
 
@@ -23,15 +20,15 @@ format_num_as_nor_num_2(x)
 
 - x:
 
-  Numeric vector to format
+  Numeric vector to format.
 
 ## Value
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
 ## See also
 

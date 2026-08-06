@@ -1,10 +1,10 @@
-# Format numbers on inverse log-10 scale with journal conventions (1 digit)
+# Format numbers on inverse log-10 scale with journal conventions (1 decimal place)
 
-Formats values by applying 10^x transformation then formatting with
-journal conventions and 1 decimal place.
+Applies `10^x`, then formats with journal conventions and 1 decimal
+place.
 
-Formats values by applying 10^x transformation then formatting with
-journal conventions and 2 decimal places.
+Applies `10^x`, then formats with journal conventions and 2 decimal
+places.
 
 ## Usage
 
@@ -18,13 +18,13 @@ format_num_as_journal_invlog10_2(x)
 
 - x:
 
-  Numeric vector (log-10 scale values)
+  Numeric vector of values on the log-10 scale.
 
 ## Value
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
 ## See also
 
