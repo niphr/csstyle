@@ -49,7 +49,7 @@ demonstrates `format_date_as_journal()` and
 format_date_as_journal()
 #> [1] "2026-08-06"
 format_datetime_as_journal()
-#> [1] "2026-08-06 08:08:06"
+#> [1] "2026-08-06 09:36:50"
 
 # Format specific dates
 format_date_as_journal(as.Date("2023-12-25"))

@@ -12,6 +12,8 @@ This package is proudly brought to you by:
 
 - **Chi Zhang**. Author.
 
+- **Folkehelseinstituttet**. Copyright holder.
+
 See the [changelog](https://niphr.github.io/csstyle/news/index.md) for
 other contributors. 🙏
 
