@@ -3,24 +3,24 @@
 \name{format_num_as_journal_invlog2_1}
 \alias{format_num_as_journal_invlog2_1}
 \alias{format_num_as_journal_invlog2_2}
-\title{Format numbers on inverse log-2 scale with journal conventions (1 digit)}
+\title{Format numbers on inverse log-2 scale with journal conventions (1 decimal place)}
 \usage{
 format_num_as_journal_invlog2_1(x)
 
 format_num_as_journal_invlog2_2(x)
 }
 \arguments{
-\item{x}{Numeric vector (log-2 scale values)}
+\item{x}{Numeric vector of values on the log-2 scale.}
 }
 \value{
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 }
 \description{
-Formats values by applying 2^x transformation then formatting with journal conventions and 1 decimal place.
+Applies \code{2^x}, then formats with journal conventions and 1 decimal place.
 
-Formats values by applying 2^x transformation then formatting with journal conventions and 2 decimal places.
+Applies \code{2^x}, then formats with journal conventions and 2 decimal places.
 }
 \examples{
 # Transform log2 values back to original scale

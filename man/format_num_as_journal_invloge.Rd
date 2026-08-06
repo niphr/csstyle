@@ -3,24 +3,24 @@
 \name{format_num_as_journal_invloge_1}
 \alias{format_num_as_journal_invloge_1}
 \alias{format_num_as_journal_invloge_2}
-\title{Format numbers on inverse natural log scale with journal conventions (1 digit)}
+\title{Format numbers on inverse natural log scale with journal conventions (1 decimal place)}
 \usage{
 format_num_as_journal_invloge_1(x)
 
 format_num_as_journal_invloge_2(x)
 }
 \arguments{
-\item{x}{Numeric vector (natural log scale values)}
+\item{x}{Numeric vector of values on the natural log scale.}
 }
 \value{
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 }
 \description{
-Formats values by applying exp(x) transformation then formatting with journal conventions and 1 decimal place.
+Applies \code{exp(x)}, then formats with journal conventions and 1 decimal place.
 
-Formats values by applying exp(x) transformation then formatting with journal conventions and 2 decimal places.
+Applies \code{exp(x)}, then formats with journal conventions and 2 decimal places.
 }
 \examples{
 # Transform natural log values back to original scale

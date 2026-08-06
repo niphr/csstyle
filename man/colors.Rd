@@ -7,15 +7,19 @@
 A list with the following elements:
 \describe{
   \item{named_colors}{Named character vector of 12 colors, "H1" to "H12".
-    "H1" to "H7" are hex codes; "H8" to "H12" are R color names.}
-  \item{base}{The base color (element "H1" of \code{named_colors}).}
+    "H1" to "H7" are hex codes. "H8" to "H12" are R color names.
+  }
+  \item{base}{The base color, element "H1" of \code{named_colors}.
+  }
   \item{palettes}{Named list of palettes: \code{primary_1} to
     \code{primary_12} (1 to 12 levels), \code{warning_3} (3 levels) and
     \code{posneg_2} (2 levels). The \code{posneg} family has no 1-level
     palette, so \code{scale_color_cs(palette = "posneg")} accepts 2 levels
-    only.}
+    only.
+  }
   \item{palette_names}{Character vector of the palette family names
-    ("primary", "posneg", "warning").}
+    ("primary", "posneg", "warning").
+  }
 }
 }
 \usage{
@@ -25,8 +29,9 @@ colors
 A list. See the Format section for the elements.
 }
 \description{
-A list holding the named colors, the base color, and the
-  predefined color palettes used by the Core Surveillance styling functions.
+A list of the named colors, the base color, and the predefined
+  color palettes. The Core Surveillance styling functions take their colors
+  from this list.
 }
 \examples{
 # Access named colors

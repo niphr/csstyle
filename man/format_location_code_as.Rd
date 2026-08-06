@@ -22,25 +22,31 @@ format_location_code_as_character(
 )
 }
 \arguments{
-\item{x}{Character vector of Norwegian location codes}
+\item{x}{Character vector of Norwegian location codes.}
 
-\item{label}{Column name from reference data to use for labels (default: uses global setting)}
+\item{label}{Column name in the reference data to use for labels. Defaults to
+the global setting.}
 
-\item{label_if_not_unique}{Column name to use when location names are not unique (default: uses global setting)}
+\item{label_if_not_unique}{Column name to use when the location names are not
+unique. Defaults to the global setting.}
 
-\item{reference}{Data.table with location reference data (default: csdata::nor_locations_names())}
+\item{reference}{Data.table of location reference data. Default
+\code{csdata::nor_locations_names()}.}
 
-\item{direction}{Integer: 1 for normal order, -1 for reversed order (default: 1)}
+\item{direction}{Integer. Use 1 for the normal order and -1 for the reversed
+order. Default 1.}
 }
 \value{
-Factor vector with Norwegian location names as labels
+Factor vector with Norwegian location names as labels.
 
-Character vector with Norwegian location names
+Character vector of Norwegian location names.
 }
 \description{
-Converts Norwegian location codes (municipality/county codes) to factors with human-readable Norwegian location names.
+Converts Norwegian location codes (municipality and county
+  codes) to a factor with human-readable location names.
 
-Converts Norwegian location codes to character vector with human-readable Norwegian location names.
+Converts Norwegian location codes to a character vector of
+  human-readable Norwegian location names.
 }
 \examples{
 \donttest{
@@ -51,10 +57,10 @@ format_location_code_as_character(location_codes)
 }
 }
 \seealso{
-\code{\link{set_global}} to change the default \code{label} and
-  \code{label_if_not_unique} columns, and
-  \code{\link{format_cstidy_age_as_factor}} for the same factor/character
-  pair applied to cstidy age codes. These two location functions are not
-  demonstrated in \code{vignette("csstyle")}.
+\code{\link{set_global}} changes the default \code{label} and
+  \code{label_if_not_unique} columns.
+  \code{\link{format_cstidy_age_as_factor}} applies the same factor and
+  character pair to cstidy age codes. \code{vignette("csstyle")} does not
+  demonstrate these two location functions.
 }
 \concept{csstyle_location_formatters}

@@ -7,13 +7,15 @@
 every_nth(n)
 }
 \arguments{
-\item{n}{Integer specifying which nth value to return (e.g., n=2 returns every 2nd value)}
+\item{n}{Integer. Which nth value to return: \code{n = 2} returns every 2nd
+value.}
 }
 \value{
 A function that returns every nth discrete value.
 }
 \description{
-Creates a function that returns every nth element from a vector, useful for axis breaks in ggplot2.
+Creates a function that returns every nth element of a vector.
+  Use it for axis breaks in ggplot2.
 }
 \examples{
 every_nth(4)(c(1:10))

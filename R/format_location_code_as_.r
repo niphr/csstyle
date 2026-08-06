@@ -1,12 +1,17 @@
 #' Convert Norwegian location codes to factor with readable labels
 #'
-#' @description Converts Norwegian location codes (municipality/county codes) to factors with human-readable Norwegian location names.
-#' @param x Character vector of Norwegian location codes
-#' @param label Column name from reference data to use for labels (default: uses global setting)
-#' @param label_if_not_unique Column name to use when location names are not unique (default: uses global setting)
-#' @param reference Data.table with location reference data (default: csdata::nor_locations_names())
-#' @param direction Integer: 1 for normal order, -1 for reversed order (default: 1)
-#' @returns Factor vector with Norwegian location names as labels
+#' @description Converts Norwegian location codes (municipality and county
+#'   codes) to a factor with human-readable location names.
+#' @param x Character vector of Norwegian location codes.
+#' @param label Column name in the reference data to use for labels. Defaults to
+#'   the global setting.
+#' @param label_if_not_unique Column name to use when the location names are not
+#'   unique. Defaults to the global setting.
+#' @param reference Data.table of location reference data. Default
+#'   \code{csdata::nor_locations_names()}.
+#' @param direction Integer. Use 1 for the normal order and -1 for the reversed
+#'   order. Default 1.
+#' @returns Factor vector with Norwegian location names as labels.
 #' @examples
 #' \donttest{
 #' # Convert location codes to factors (requires csdata package)
@@ -14,11 +19,11 @@
 #' format_location_code_as_factor(location_codes)
 #' format_location_code_as_character(location_codes)
 #' }
-#' @seealso \code{\link{set_global}} to change the default \code{label} and
-#'   \code{label_if_not_unique} columns, and
-#'   \code{\link{format_cstidy_age_as_factor}} for the same factor/character
-#'   pair applied to cstidy age codes. These two location functions are not
-#'   demonstrated in \code{vignette("csstyle")}.
+#' @seealso \code{\link{set_global}} changes the default \code{label} and
+#'   \code{label_if_not_unique} columns.
+#'   \code{\link{format_cstidy_age_as_factor}} applies the same factor and
+#'   character pair to cstidy age codes. \code{vignette("csstyle")} does not
+#'   demonstrate these two location functions.
 #' @family csstyle_location_formatters
 #' @rdname format_location_code_as
 #' @export
@@ -67,13 +72,18 @@ format_location_code_as_factor <- function(
 
 #' Convert Norwegian location codes to character with readable labels
 #'
-#' @description Converts Norwegian location codes to character vector with human-readable Norwegian location names.
-#' @param x Character vector of Norwegian location codes
-#' @param label Column name from reference data to use for labels (default: uses global setting)
-#' @param label_if_not_unique Column name to use when location names are not unique (default: uses global setting)
-#' @param reference Data.table with location reference data (default: csdata::nor_locations_names())
-#' @param direction Integer: 1 for normal order, -1 for reversed order (default: 1)
-#' @returns Character vector with Norwegian location names
+#' @description Converts Norwegian location codes to a character vector of
+#'   human-readable Norwegian location names.
+#' @param x Character vector of Norwegian location codes.
+#' @param label Column name in the reference data to use for labels. Defaults to
+#'   the global setting.
+#' @param label_if_not_unique Column name to use when the location names are not
+#'   unique. Defaults to the global setting.
+#' @param reference Data.table of location reference data. Default
+#'   \code{csdata::nor_locations_names()}.
+#' @param direction Integer. Use 1 for the normal order and -1 for the reversed
+#'   order. Default 1.
+#' @returns Character vector of Norwegian location names.
 #' @family csstyle_location_formatters
 #' @rdname format_location_code_as
 #' @export

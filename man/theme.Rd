@@ -22,38 +22,48 @@ theme_cs(
 set_x_axis_vertical()
 }
 \arguments{
-\item{base_size}{Base font size in points (default: 16)}
+\item{base_size}{Base font size in points. Default 16.}
 
-\item{base_family}{Base font family (default: "")}
+\item{base_family}{Base font family. Default \code{""}.}
 
-\item{base_line_size}{Base line size relative to base_size (default: base_size/22)}
+\item{base_line_size}{Base line size, relative to \code{base_size}. Default
+\code{base_size / 22}.}
 
-\item{base_rect_size}{Base rectangle size relative to base_size (default: base_size/22)}
+\item{base_rect_size}{Base rectangle size, relative to \code{base_size}.
+Default \code{base_size / 22}.}
 
-\item{legend_position}{Position of legend: "right", "left", "top", "bottom", or "none" (default: "right")}
+\item{legend_position}{Position of the legend. One of "right", "left", "top",
+"bottom" or "none". Default "right".}
 
-\item{x_axis_vertical}{Logical: should x-axis labels be vertical? (default: FALSE)}
+\item{x_axis_vertical}{Logical. Set to \code{TRUE} to turn the x-axis labels
+vertical. Default \code{FALSE}.}
 
-\item{panel_on_top}{Logical: should panel be drawn on top of data? (default: TRUE)}
+\item{panel_on_top}{Logical. Set to \code{TRUE} to draw the panel on top of
+the data. Default \code{TRUE}.}
 
-\item{panel.grid.major.x}{Logical or element: major vertical grid lines (default: FALSE)}
+\item{panel.grid.major.x}{Logical, or a ggplot2 element. Major vertical grid
+lines. Default \code{FALSE}.}
 
-\item{panel.grid.minor.x}{Logical or element: minor vertical grid lines (default: FALSE)}
+\item{panel.grid.minor.x}{Logical, or a ggplot2 element. Minor vertical grid
+lines. Default \code{FALSE}.}
 
-\item{panel.grid.major.y}{Logical or element: major horizontal grid lines (default: TRUE)}
+\item{panel.grid.major.y}{Logical, or a ggplot2 element. Major horizontal
+grid lines. Default \code{TRUE}.}
 
-\item{panel.grid.minor.y}{Logical or element: minor horizontal grid lines (default: TRUE)}
+\item{panel.grid.minor.y}{Logical, or a ggplot2 element. Minor horizontal
+grid lines. Default \code{TRUE}.}
 }
 \value{
-Complete ggplot2 theme object
+A complete ggplot2 theme object.
 
-A ggplot2 theme component that can be added to a plot.
+A ggplot2 theme component that you can add to a plot.
 }
 \description{
-Custom ggplot2 theme following Core Surveillance visual guidelines with configurable grid lines and formatting.
+A ggplot2 theme that follows the Core Surveillance visual
+  guidelines. You can configure the grid lines and the formatting.
 
-Returns a ggplot2 theme component that rotates the x-axis tick
-  labels to be vertical. Add it to a plot like any other theme element.
+Returns a ggplot2 theme component that turns the x-axis tick
+  labels vertical. Add it to a plot as you add any other theme element.
 }
 \examples{
 library(ggplot2)

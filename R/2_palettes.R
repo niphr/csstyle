@@ -1,11 +1,23 @@
 #' @noRd
 cs_pal <- function(palette = "primary", direction = 1) {
-  if (!palette %in% colors$palette_names) stop("Palette '{palette}' not in: ", paste0(colors$palette_names, collapse = ", "))
+  if (!palette %in% colors$palette_names) {
+    stop(
+      "Palette '{palette}' not in: ",
+      paste0(colors$palette_names, collapse = ", ")
+    )
+  }
 
   function(n) {
-    pal_names <- stringr::str_subset(names(colors$palettes), glue::glue("^{palette}_[0-9]+$"))
+    pal_names <- stringr::str_subset(
+      names(colors$palettes),
+      glue::glue("^{palette}_[0-9]+$")
+    )
     nums_available <- stringr::str_remove(pal_names, paste0(palette, "_"))
-    if (!n %in% nums_available) stop(glue::glue("Only {paste0(nums_available, collapse=', ')} levels allowed for {palette}"))
+    if (!n %in% nums_available) {
+      stop(glue::glue(
+        "Only {paste0(nums_available, collapse=', ')} levels allowed for {palette}"
+      ))
+    }
 
     pal <- colors$palettes[[glue::glue("{palette}_{n}")]]
     if (direction == -1) {
@@ -21,11 +33,14 @@ cs_pal <- function(palette = "primary", direction = 1) {
 
 #' ggplot2 color scale using Core Surveillance color palettes
 #'
-#' @description Creates a discrete color scale for ggplot2 using predefined Core Surveillance color palettes.
-#' @param palette Name of color palette to use (default: "primary"). Options: "primary", "warning", "posneg"
-#' @param direction Direction of color palette: 1 for normal, -1 for reversed (default: 1)
-#' @param ... Additional arguments passed to ggplot2::discrete_scale()
-#' @returns A ggplot2 discrete color scale
+#' @description Creates a discrete ggplot2 color scale from a predefined Core
+#'   Surveillance color palette.
+#' @param palette Name of the palette family. One of "primary", "warning" or
+#'   "posneg". Default "primary".
+#' @param direction Direction of the palette. Use 1 for the normal order and -1
+#'   for the reversed order. Default 1.
+#' @param ... Further arguments passed to \code{ggplot2::discrete_scale()}.
+#' @returns A ggplot2 discrete color scale.
 #' @examples
 #' library(ggplot2)
 #'
@@ -48,11 +63,14 @@ scale_color_cs <- function(..., palette = "primary", direction = 1) {
 
 #' ggplot2 fill scale using Core Surveillance color palettes
 #'
-#' @description Creates a discrete fill scale for ggplot2 using predefined Core Surveillance color palettes.
-#' @param palette Name of color palette to use (default: "primary"). Options: "primary", "warning", "posneg"
-#' @param direction Direction of color palette: 1 for normal, -1 for reversed (default: 1)
-#' @param ... Additional arguments passed to ggplot2::discrete_scale()
-#' @returns A ggplot2 discrete fill scale
+#' @description Creates a discrete ggplot2 fill scale from a predefined Core
+#'   Surveillance color palette.
+#' @param palette Name of the palette family. One of "primary", "warning" or
+#'   "posneg". Default "primary".
+#' @param direction Direction of the palette. Use 1 for the normal order and -1
+#'   for the reversed order. Default 1.
+#' @param ... Further arguments passed to \code{ggplot2::discrete_scale()}.
+#' @returns A ggplot2 discrete fill scale.
 #' @examples
 #' library(ggplot2)
 #'
@@ -75,8 +93,9 @@ scale_fill_cs <- function(..., palette = "primary", direction = 1) {
 
 #' Display all available color palettes
 #'
-#' @description Creates a visualization showing all available Core Surveillance color palettes with their color codes and names.
-#' @returns A ggplot2 plot displaying all color palettes
+#' @description Creates a plot that shows all available Core Surveillance color
+#'   palettes with their color codes and names.
+#' @returns A ggplot2 plot that shows all the color palettes.
 #' @examples
 #' # Display all available color palettes
 #' display_all_palettes()
@@ -93,8 +112,15 @@ display_all_palettes <- function() {
   to_plot <- vector("list", length = length(tags))
 
   for (i in seq_along(tags)) {
-    p <- stringr::str_subset(rev(names(colors$palettes)), glue::glue("^{tags[i]}_[0-9]+$"))[1]
-    to_plot[[i]] <- data.table(pal = stringr::str_remove(p, "_[0-9]+$"), colors$palettes[[p]], names(colors$palettes[[p]]))
+    p <- stringr::str_subset(
+      rev(names(colors$palettes)),
+      glue::glue("^{tags[i]}_[0-9]+$")
+    )[1]
+    to_plot[[i]] <- data.table(
+      pal = stringr::str_remove(p, "_[0-9]+$"),
+      colors$palettes[[p]],
+      names(colors$palettes[[p]])
+    )
     to_plot[[i]][, x := 1:.N]
   }
   to_plot <- rbindlist(to_plot)

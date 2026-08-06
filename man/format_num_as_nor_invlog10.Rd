@@ -3,24 +3,24 @@
 \name{format_num_as_nor_invlog10_1}
 \alias{format_num_as_nor_invlog10_1}
 \alias{format_num_as_nor_invlog10_2}
-\title{Format numbers on inverse log-10 scale with Norwegian conventions (1 digit)}
+\title{Format numbers on inverse log-10 scale with Norwegian conventions (1 decimal place)}
 \usage{
 format_num_as_nor_invlog10_1(x)
 
 format_num_as_nor_invlog10_2(x)
 }
 \arguments{
-\item{x}{Numeric vector (log-10 scale values)}
+\item{x}{Numeric vector of values on the log-10 scale.}
 }
 \value{
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 }
 \description{
-Formats values by applying 10^x transformation then formatting with Norwegian conventions and 1 decimal place.
+Applies \code{10^x}, then formats with Norwegian conventions and 1 decimal place.
 
-Formats values by applying 10^x transformation then formatting with Norwegian conventions and 2 decimal places.
+Applies \code{10^x}, then formats with Norwegian conventions and 2 decimal places.
 }
 \examples{
 # Transform log10 values back to original scale

@@ -10,22 +10,20 @@
 \item{x}{A \code{github_code} object, as created by
 \code{\link{as_github_code}}.}
 
-\item{...}{Further arguments controlling the output: \code{lines} (integer
-vector of line numbers to print), \code{include_url} (logical; print the
-GitHub link), and \code{include_url_as_link} (logical; print the link as
-HTML).}
+\item{...}{Further arguments that control the output. \code{lines} is an
+integer vector of the line numbers to print. \code{include_url} is logical.
+Set it to \code{TRUE} to also print the GitHub link.
+\code{include_url_as_link} is logical. Set it to \code{TRUE} to print the
+GitHub link as HTML.}
 }
 \value{
 The input \code{x}, invisibly.
 }
 \description{
 Prints the lines of a \code{github_code} object with line
-  numbers. Use the \code{lines} argument to print a subset of lines, and
+  numbers. Use the \code{lines} argument to print a subset of the lines. Use
   \code{include_url} or \code{include_url_as_link} to also print a link back
   to the file on GitHub.
-}
-\details{
-Print a github_code object
 }
 \examples{
 # as_github_code() needs an internet connection, so this example builds an
@@ -41,6 +39,6 @@ print(x)
 print(x, lines = 2:3, include_url = TRUE)
 }
 \seealso{
-\code{\link{as_github_code}} to build such an object from a real
-  GitHub URL. Neither function is demonstrated in \code{vignette("csstyle")}.
+\code{\link{as_github_code}} builds such an object from a real
+  GitHub URL. \code{vignette("csstyle")} demonstrates neither function.
 }

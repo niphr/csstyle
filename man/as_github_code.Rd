@@ -7,9 +7,9 @@
 as_github_code(url)
 }
 \arguments{
-\item{url}{Character string. A GitHub URL to a file, either a "blob" URL
-(e.g. \code{https://github.com/owner/repo/blob/main/file.R}) or the
-corresponding raw URL.}
+\item{url}{Character string. A GitHub URL to a file. Use either a "blob" URL,
+for example \code{https://github.com/owner/repo/blob/main/file.R}, or the
+matching raw URL.}
 }
 \value{
 An object of class \code{github_code}: a character vector of the
@@ -17,13 +17,10 @@ An object of class \code{github_code}: a character vector of the
 }
 \description{
 Reads the lines of a file on GitHub and returns them as a
-  \code{github_code} object. A "blob" URL is rewritten to the corresponding
-  raw URL before the file is read. The object can be printed with line
-  numbers and an optional link back to GitHub (see
-  \code{\link{print.github_code}}).
-}
-\details{
-Create a github_code object from a GitHub URL
+  \code{github_code} object. The function rewrites a "blob" URL to the
+  matching raw URL before it reads the file.
+  \code{\link{print.github_code}} prints the object with line numbers and an
+  optional link back to GitHub.
 }
 \examples{
 \dontrun{
@@ -35,6 +32,6 @@ print(x, lines = 1:3)
 }
 \seealso{
 \code{\link{print.github_code}}, whose examples run without a
-  network connection. Neither function is demonstrated in
-  \code{vignette("csstyle")}.
+  network connection. \code{vignette("csstyle")} demonstrates neither
+  function.
 }

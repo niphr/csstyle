@@ -4,7 +4,7 @@
 \alias{format_num_as_journal_num_0}
 \alias{format_num_as_journal_num_1}
 \alias{format_num_as_journal_num_2}
-\title{Format numbers with journal conventions (0 digits)}
+\title{Format numbers with journal conventions (0 decimal places)}
 \usage{
 format_num_as_journal_num_0(x)
 
@@ -13,21 +13,21 @@ format_num_as_journal_num_1(x)
 format_num_as_journal_num_2(x)
 }
 \arguments{
-\item{x}{Numeric vector to format}
+\item{x}{Numeric vector to format.}
 }
 \value{
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 
-Character vector with journal-formatted numbers
+Character vector of journal-formatted numbers.
 }
 \description{
-Formats numeric values using journal number conventions with 0 decimal places.
+Formats numeric values with journal conventions and 0 decimal places.
 
-Formats numeric values using journal number conventions with 1 decimal place.
+Formats numeric values with journal conventions and 1 decimal place.
 
-Formats numeric values using journal number conventions with 2 decimal places.
+Formats numeric values with journal conventions and 2 decimal places.
 }
 \examples{
 # Journal number formatting

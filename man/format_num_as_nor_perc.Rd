@@ -4,7 +4,7 @@
 \alias{format_num_as_nor_perc_0}
 \alias{format_num_as_nor_perc_1}
 \alias{format_num_as_nor_perc_2}
-\title{Format numbers as percentages with Norwegian conventions (0 digits)}
+\title{Format numbers as percentages with Norwegian conventions (0 decimal places)}
 \usage{
 format_num_as_nor_perc_0(x)
 
@@ -13,21 +13,21 @@ format_num_as_nor_perc_1(x)
 format_num_as_nor_perc_2(x)
 }
 \arguments{
-\item{x}{Numeric vector to format}
+\item{x}{Numeric vector to format.}
 }
 \value{
-Character vector with Norwegian-formatted numbers and "%" suffix
+Character vector of Norwegian-formatted numbers with a "%" suffix.
 
-Character vector with Norwegian-formatted numbers and "%" suffix
+Character vector of Norwegian-formatted numbers with a "%" suffix.
 
-Character vector with Norwegian-formatted numbers and "%" suffix
+Character vector of Norwegian-formatted numbers with a "%" suffix.
 }
 \description{
-Formats numeric values as percentages using Norwegian number conventions with 0 decimal places.
+Formats numeric values as percentages with Norwegian conventions and 0 decimal places.
 
-Formats numeric values as percentages using Norwegian number conventions with 1 decimal place.
+Formats numeric values as percentages with Norwegian conventions and 1 decimal place.
 
-Formats numeric values as percentages using Norwegian number conventions with 2 decimal places.
+Formats numeric values as percentages with Norwegian conventions and 2 decimal places.
 }
 \examples{
 # Format percentages

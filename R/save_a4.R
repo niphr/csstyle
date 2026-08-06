@@ -1,13 +1,16 @@
-#' Save ggplot in A4 scale
+#' Save a ggplot2 plot at A4 size
 #' @description Saves a ggplot2 plot with A4 paper dimensions.
-#' @param q ggplot2 plot object to save
-#' @param filename Character string specifying the output filename (with extension)
-#' @param landscape Logical indicating if plot should use landscape orientation (default: TRUE)
-#' @param scaling_factor Numeric scaling factor for A4 dimensions (default: 1)
-#' @details PNG output is rendered with the `ragg` AGG device
-#'   (`ragg::agg_png`), which is markedly faster than the default `grDevices`
-#'   PNG device for busy, many-geom ggplots (and gives cleaner text). Non-PNG
-#'   filenames fall back to `ggsave`'s extension-based device selection.
+#' @param q ggplot2 plot object to save.
+#' @param filename Character string. The output filename, including the
+#'   extension.
+#' @param landscape Logical. Set to \code{TRUE} for landscape orientation.
+#'   Default \code{TRUE}.
+#' @param scaling_factor Numeric. Scales the A4 dimensions. Default 1.
+#' @details \code{save_a4()} renders PNG output with the \code{ragg} AGG device,
+#'   \code{ragg::agg_png}. That device is markedly faster than the default
+#'   \code{grDevices} PNG device for busy, many-geom ggplot2 plots, and it gives
+#'   cleaner text. For a filename that is not a PNG, \code{ggsave()} selects the
+#'   device from the extension.
 #' @returns Nothing (called for side effects).
 #' @examples
 #' library(ggplot2)
@@ -24,8 +27,8 @@
 #' # Save in portrait A4 with larger scaling
 #' save_a4(p, "myplot_large.png", landscape = FALSE, scaling_factor = 1.5)
 #' }
-#' @seealso \code{\link{theme_cs}} for the Core Surveillance plot theme.
-#'   \code{save_a4()} is not demonstrated in \code{vignette("csstyle")}.
+#' @seealso \code{\link{theme_cs}} is the Core Surveillance plot theme.
+#'   \code{vignette("csstyle")} does not demonstrate \code{save_a4()}.
 #' @export
 save_a4 <- function(q, filename, landscape = T, scaling_factor = 1) {
   # Use the ragg AGG device for PNGs (much faster than grDevices::png on

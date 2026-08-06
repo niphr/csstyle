@@ -4,7 +4,7 @@
 \alias{format_num_as_journal_per100k_0}
 \alias{format_num_as_journal_per100k_1}
 \alias{format_num_as_journal_per100k_2}
-\title{Format numbers per 100k with journal conventions (0 digits)}
+\title{Format numbers per 100k with journal conventions (0 decimal places)}
 \usage{
 format_num_as_journal_per100k_0(x)
 
@@ -13,21 +13,21 @@ format_num_as_journal_per100k_1(x)
 format_num_as_journal_per100k_2(x)
 }
 \arguments{
-\item{x}{Numeric vector to format}
+\item{x}{Numeric vector to format.}
 }
 \value{
-Character vector with journal-formatted numbers and "/100k" suffix
+Character vector of journal-formatted numbers with a "/100k" suffix.
 
-Character vector with journal-formatted numbers and "/100k" suffix
+Character vector of journal-formatted numbers with a "/100k" suffix.
 
-Character vector with journal-formatted numbers and "/100k" suffix
+Character vector of journal-formatted numbers with a "/100k" suffix.
 }
 \description{
-Formats numeric values as "per 100k" rates using journal number conventions with 0 decimal places.
+Formats numeric values as rates per 100k with journal conventions and 0 decimal places.
 
-Formats numeric values as "per 100k" rates using journal number conventions with 1 decimal place.
+Formats numeric values as rates per 100k with journal conventions and 1 decimal place.
 
-Formats numeric values as "per 100k" rates using journal number conventions with 2 decimal places.
+Formats numeric values as rates per 100k with journal conventions and 2 decimal places.
 }
 \examples{
 # Format rates per 100k population

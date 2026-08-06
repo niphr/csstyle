@@ -7,7 +7,7 @@
 view_html(x)
 }
 \arguments{
-\item{x}{Character string containing HTML content to display}
+\item{x}{Character string. The HTML content to show.}
 }
 \value{
 Nothing (called for side effects).
@@ -23,6 +23,6 @@ view_html(html_content)
 }
 }
 \seealso{
-\code{vignette("csstyle")} for an overview of the package.
-  \code{view_html()} itself is not demonstrated there.
+\code{vignette("csstyle")} gives an overview of the package. It does
+  not demonstrate \code{view_html()}.
 }

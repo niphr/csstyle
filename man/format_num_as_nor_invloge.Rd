@@ -3,24 +3,24 @@
 \name{format_num_as_nor_invloge_1}
 \alias{format_num_as_nor_invloge_1}
 \alias{format_num_as_nor_invloge_2}
-\title{Format numbers on inverse natural log scale with Norwegian conventions (1 digit)}
+\title{Format numbers on inverse natural log scale with Norwegian conventions (1 decimal place)}
 \usage{
 format_num_as_nor_invloge_1(x)
 
 format_num_as_nor_invloge_2(x)
 }
 \arguments{
-\item{x}{Numeric vector (natural log scale values)}
+\item{x}{Numeric vector of values on the natural log scale.}
 }
 \value{
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 }
 \description{
-Formats values by applying exp(x) transformation then formatting with Norwegian conventions and 1 decimal place.
+Applies \code{exp(x)}, then formats with Norwegian conventions and 1 decimal place.
 
-Formats values by applying exp(x) transformation then formatting with Norwegian conventions and 2 decimal places.
+Applies \code{exp(x)}, then formats with Norwegian conventions and 2 decimal places.
 }
 \examples{
 # Transform natural log values back to original scale

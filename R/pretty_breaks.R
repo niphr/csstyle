@@ -1,9 +1,11 @@
 #' Pretty breaks
-#' @description Creates a function for generating pretty axis breaks with Norwegian number formatting.
-#' @param n Number of desired breaks (default: 5)
-#' @param formatting_fn Formatting function to apply to break labels (default: Norwegian number formatting)
-#' @param ... Additional arguments passed to pretty()
-#' @returns A function that can be used for breaks on graphing.
+#' @description Creates a function that generates pretty axis breaks with
+#'   Norwegian number formatting.
+#' @param n Number of desired breaks. Default 5.
+#' @param formatting_fn Function applied to the break labels. Default
+#'   \code{format_num_as_nor_num_0()}.
+#' @param ... Further arguments passed to \code{pretty()}.
+#' @returns A function that you can use for axis breaks.
 #' @examples
 #' library(ggplot2)
 #'
@@ -11,10 +13,10 @@
 #' ggplot(mtcars, aes(x = mpg, y = hp)) +
 #'   geom_point() +
 #'   scale_x_continuous(breaks = pretty_breaks(n = 4))
-#' @seealso \code{\link{format_num_as_nor_num_0}}, the default
-#'   \code{formatting_fn}, and \code{\link{every_nth}}, which thins labels on a
-#'   discrete axis instead. The "Pretty breaks" section of
-#'   \code{vignette("csstyle")} demonstrates this function.
+#' @seealso \code{\link{format_num_as_nor_num_0}} is the default
+#'   \code{formatting_fn}. \code{\link{every_nth}} thins labels on a discrete
+#'   axis instead. The "Pretty breaks" section of \code{vignette("csstyle")}
+#'   demonstrates \code{pretty_breaks()}.
 #' @export
 pretty_breaks <- function(
   n = 5,

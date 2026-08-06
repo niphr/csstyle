@@ -1,14 +1,16 @@
 #' Format cstidy age codes as factor with Norwegian text
 #'
-#' @description Converts age codes (e.g., "009", "005_014") to readable Norwegian age labels with proper formatting.
-#' @param x Character vector containing age codes or age group codes
+#' @description Converts age codes such as "009" or "005_014" to readable
+#'   Norwegian age labels.
+#' @param x Character vector of age codes or age group codes.
 #' @examples
 #' csstyle::format_cstidy_age_as_factor("009")
 #' csstyle::format_cstidy_age_as_factor("005-014")
-#' @returns Factor vector with Norwegian age labels (e.g., "9 år", "5-14 år")
-#' @seealso \code{\link{format_location_code_as_factor}} for the same
-#'   factor/character pair applied to Norwegian location codes. These two age
-#'   functions are not demonstrated in \code{vignette("csstyle")}.
+#' @returns Factor vector of Norwegian age labels, for example "9 år" or
+#'   "5-14 år".
+#' @seealso \code{\link{format_location_code_as_factor}} applies the same factor
+#'   and character pair to Norwegian location codes.
+#'   \code{vignette("csstyle")} does not demonstrate these two age functions.
 #' @family csstyle_age_formatters
 #' @rdname format_cstidy_age_as
 #' @export
@@ -35,12 +37,14 @@ format_cstidy_age_as_factor <- function(x) {
 
 #' Format cstidy age codes as character with Norwegian text
 #'
-#' @description Converts age codes to readable Norwegian age labels and returns as character vector.
-#' @param x Character vector containing age codes or age group codes
+#' @description Converts age codes to readable Norwegian age labels and returns
+#'   them as a character vector.
+#' @param x Character vector of age codes or age group codes.
 #' @examples
 #' csstyle::format_cstidy_age_as_character("009")
 #' csstyle::format_cstidy_age_as_character("005-014")
-#' @returns Character vector with Norwegian age labels (e.g., "9 år", "5-14 år")
+#' @returns Character vector of Norwegian age labels, for example "9 år" or
+#'   "5-14 år".
 #' @family csstyle_age_formatters
 #' @rdname format_cstidy_age_as
 #' @export

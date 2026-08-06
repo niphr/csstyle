@@ -4,7 +4,7 @@
 \alias{format_num_as_nor_num_0}
 \alias{format_num_as_nor_num_1}
 \alias{format_num_as_nor_num_2}
-\title{Format numbers with Norwegian conventions (0 digits)}
+\title{Format numbers with Norwegian conventions (0 decimal places)}
 \usage{
 format_num_as_nor_num_0(x)
 
@@ -13,21 +13,21 @@ format_num_as_nor_num_1(x)
 format_num_as_nor_num_2(x)
 }
 \arguments{
-\item{x}{Numeric vector to format}
+\item{x}{Numeric vector to format.}
 }
 \value{
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 
-Character vector with Norwegian-formatted numbers
+Character vector of Norwegian-formatted numbers.
 }
 \description{
-Formats numeric values using Norwegian number conventions with 0 decimal places.
+Formats numeric values with Norwegian conventions and 0 decimal places.
 
-Formats numeric values using Norwegian number conventions with 1 decimal place.
+Formats numeric values with Norwegian conventions and 1 decimal place.
 
-Formats numeric values using Norwegian number conventions with 2 decimal places.
+Formats numeric values with Norwegian conventions and 2 decimal places.
 }
 \examples{
 # Basic number formatting

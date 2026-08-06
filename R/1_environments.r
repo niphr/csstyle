@@ -4,17 +4,17 @@ global$location_code_to_factor_label_if_not_unique <- "location_name_description
 
 #' Set global configuration for location code formatting
 #'
-#' @description Sets the global defaults that control how location codes are
-#'   turned into labels by \code{\link{format_location_code_as_factor}} and
-#'   \code{\link{format_location_code_as_character}}. These defaults are used
-#'   whenever those functions are called without an explicit \code{label} or
-#'   \code{label_if_not_unique}.
+#' @description Sets the global defaults that control how location codes become
+#'   labels in \code{\link{format_location_code_as_factor}} and
+#'   \code{\link{format_location_code_as_character}}. Both functions use these
+#'   defaults when a call leaves \code{label} or \code{label_if_not_unique}
+#'   unset.
 #' @param location_code_to_factor_label Column name in the reference data to use
-#'   for location labels (default: "location_name").
+#'   for location labels. Default \code{"location_name"}.
 #' @param location_code_to_factor_label_if_not_unique Column name in the
-#'   reference data to use when the chosen labels are not unique
-#'   (default: "location_name_description_nb").
-#' @returns Called for its side effect of updating the global configuration.
+#'   reference data to use when the chosen labels are not unique. Default
+#'   \code{"location_name_description_nb"}.
+#' @returns Called for the side effect of updating the global configuration.
 #'   Returns the assigned value invisibly.
 #' @examples
 #' # Set global location formatting preferences
@@ -37,20 +37,25 @@ set_global <- function(
 
 #' Color definitions for Core Surveillance styling
 #'
-#' @description A list holding the named colors, the base color, and the
-#'   predefined color palettes used by the Core Surveillance styling functions.
+#' @description A list of the named colors, the base color, and the predefined
+#'   color palettes. The Core Surveillance styling functions take their colors
+#'   from this list.
 #' @format A list with the following elements:
 #' \describe{
 #'   \item{named_colors}{Named character vector of 12 colors, "H1" to "H12".
-#'     "H1" to "H7" are hex codes; "H8" to "H12" are R color names.}
-#'   \item{base}{The base color (element "H1" of \code{named_colors}).}
+#'     "H1" to "H7" are hex codes. "H8" to "H12" are R color names.
+#'   }
+#'   \item{base}{The base color, element "H1" of \code{named_colors}.
+#'   }
 #'   \item{palettes}{Named list of palettes: \code{primary_1} to
 #'     \code{primary_12} (1 to 12 levels), \code{warning_3} (3 levels) and
 #'     \code{posneg_2} (2 levels). The \code{posneg} family has no 1-level
 #'     palette, so \code{scale_color_cs(palette = "posneg")} accepts 2 levels
-#'     only.}
+#'     only.
+#'   }
 #'   \item{palette_names}{Character vector of the palette family names
-#'     ("primary", "posneg", "warning").}
+#'     ("primary", "posneg", "warning").
+#'   }
 #' }
 #' @returns A list. See the Format section for the elements.
 #' @examples

@@ -7,17 +7,20 @@
 scale_fill_cs(..., palette = "primary", direction = 1)
 }
 \arguments{
-\item{...}{Additional arguments passed to ggplot2::discrete_scale()}
+\item{...}{Further arguments passed to \code{ggplot2::discrete_scale()}.}
 
-\item{palette}{Name of color palette to use (default: "primary"). Options: "primary", "warning", "posneg"}
+\item{palette}{Name of the palette family. One of "primary", "warning" or
+"posneg". Default "primary".}
 
-\item{direction}{Direction of color palette: 1 for normal, -1 for reversed (default: 1)}
+\item{direction}{Direction of the palette. Use 1 for the normal order and -1
+for the reversed order. Default 1.}
 }
 \value{
-A ggplot2 discrete fill scale
+A ggplot2 discrete fill scale.
 }
 \description{
-Creates a discrete fill scale for ggplot2 using predefined Core Surveillance color palettes.
+Creates a discrete ggplot2 fill scale from a predefined Core
+  Surveillance color palette.
 }
 \examples{
 library(ggplot2)

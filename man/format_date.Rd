@@ -16,15 +16,16 @@ format_datetime_as_nor(
 format_datetime_as_file(x = lubridate::now(), format = "\%Y_\%m_\%d_\%H\%M\%S")
 }
 \arguments{
-\item{x}{Date or datetime object to format}
+\item{x}{Date or datetime object to format.}
 
-\item{format}{Character string specifying the desired format}
+\item{format}{Character string that sets the output format.}
 }
 \value{
-Character vector with formatted dates/datetimes
+Character vector of formatted dates and datetimes.
 }
 \description{
-Functions for formatting dates and datetimes using Norwegian conventions or for safe filename use.
+Formats dates and datetimes with Norwegian conventions, or with
+  a filename-safe format.
 }
 \examples{
 # Format current date/time using Norwegian conventions
@@ -36,8 +37,8 @@ format_date_as_nor(as.Date("2023-12-25"))
 format_datetime_as_file(as.POSIXct("2023-12-25 14:30:00"))
 }
 \seealso{
-\code{\link{format_date_as_journal}} for the ISO 8601 equivalents.
+\code{\link{format_date_as_journal}} gives the ISO 8601 equivalents.
   The "Norwegian date format" section of \code{vignette("csstyle")}
-  demonstrates all three of these functions.
+  demonstrates all three functions on this page.
 }
 \concept{csstyle_date_formatters}

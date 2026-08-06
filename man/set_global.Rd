@@ -11,22 +11,22 @@ set_global(
 }
 \arguments{
 \item{location_code_to_factor_label}{Column name in the reference data to use
-for location labels (default: "location_name").}
+for location labels. Default \code{"location_name"}.}
 
 \item{location_code_to_factor_label_if_not_unique}{Column name in the
-reference data to use when the chosen labels are not unique
-(default: "location_name_description_nb").}
+reference data to use when the chosen labels are not unique. Default
+\code{"location_name_description_nb"}.}
 }
 \value{
-Called for its side effect of updating the global configuration.
+Called for the side effect of updating the global configuration.
   Returns the assigned value invisibly.
 }
 \description{
-Sets the global defaults that control how location codes are
-  turned into labels by \code{\link{format_location_code_as_factor}} and
-  \code{\link{format_location_code_as_character}}. These defaults are used
-  whenever those functions are called without an explicit \code{label} or
-  \code{label_if_not_unique}.
+Sets the global defaults that control how location codes become
+  labels in \code{\link{format_location_code_as_factor}} and
+  \code{\link{format_location_code_as_character}}. Both functions use these
+  defaults when a call leaves \code{label} or \code{label_if_not_unique}
+  unset.
 }
 \examples{
 # Set global location formatting preferences

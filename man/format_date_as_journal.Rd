@@ -19,15 +19,16 @@ format_datetime_as_journal_file(
 )
 }
 \arguments{
-\item{x}{Date or datetime object to format}
+\item{x}{Date or datetime object to format.}
 
-\item{format}{Character string specifying the desired format}
+\item{format}{Character string that sets the output format.}
 }
 \value{
-Character vector with journal-formatted dates/datetimes
+Character vector of journal-formatted dates and datetimes.
 }
 \description{
-Functions for formatting dates and datetimes using ISO 8601 journal conventions.
+Formats dates and datetimes with the ISO 8601 conventions that
+  journals use.
 }
 \examples{
 # Format current date/time using journal conventions (ISO 8601)
@@ -39,9 +40,10 @@ format_date_as_journal(as.Date("2023-12-25"))
 format_datetime_as_journal_file(as.POSIXct("2023-12-25 14:30:00"))
 }
 \seealso{
-\code{\link{format_date_as_nor}} for the Norwegian equivalents. The
-  "Date format comparison" section of \code{vignette("csstyle")} demonstrates
-  \code{format_date_as_journal()} and \code{format_datetime_as_journal()};
-  \code{format_datetime_as_journal_file()} is not demonstrated there.
+\code{\link{format_date_as_nor}} gives the Norwegian equivalents.
+  The "Date format comparison" section of \code{vignette("csstyle")}
+  demonstrates \code{format_date_as_journal()} and
+  \code{format_datetime_as_journal()}. That section does not demonstrate
+  \code{format_datetime_as_journal_file()}.
 }
 \concept{csstyle_journal_date_formatters}

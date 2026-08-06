@@ -2,18 +2,20 @@
 % Please edit documentation in R/save_a4.R
 \name{save_a4}
 \alias{save_a4}
-\title{Save ggplot in A4 scale}
+\title{Save a ggplot2 plot at A4 size}
 \usage{
 save_a4(q, filename, landscape = T, scaling_factor = 1)
 }
 \arguments{
-\item{q}{ggplot2 plot object to save}
+\item{q}{ggplot2 plot object to save.}
 
-\item{filename}{Character string specifying the output filename (with extension)}
+\item{filename}{Character string. The output filename, including the
+extension.}
 
-\item{landscape}{Logical indicating if plot should use landscape orientation (default: TRUE)}
+\item{landscape}{Logical. Set to \code{TRUE} for landscape orientation.
+Default \code{TRUE}.}
 
-\item{scaling_factor}{Numeric scaling factor for A4 dimensions (default: 1)}
+\item{scaling_factor}{Numeric. Scales the A4 dimensions. Default 1.}
 }
 \value{
 Nothing (called for side effects).
@@ -22,17 +24,18 @@ Nothing (called for side effects).
 Saves a ggplot2 plot with A4 paper dimensions.
 }
 \details{
-PNG output is rendered with the `ragg` AGG device
-  (`ragg::agg_png`), which is markedly faster than the default `grDevices`
-  PNG device for busy, many-geom ggplots (and gives cleaner text). Non-PNG
-  filenames fall back to `ggsave`'s extension-based device selection.
+\code{save_a4()} renders PNG output with the \code{ragg} AGG device,
+  \code{ragg::agg_png}. That device is markedly faster than the default
+  \code{grDevices} PNG device for busy, many-geom ggplot2 plots, and it gives
+  cleaner text. For a filename that is not a PNG, \code{ggsave()} selects the
+  device from the extension.
 }
 \examples{
 library(ggplot2)
 
 # Create a plot
-p <- ggplot(mtcars, aes(x = mpg, y = hp)) + 
-  geom_point() + 
+p <- ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point() +
   theme_cs()
 
 \dontrun{
@@ -44,6 +47,6 @@ save_a4(p, "myplot_large.png", landscape = FALSE, scaling_factor = 1.5)
 }
 }
 \seealso{
-\code{\link{theme_cs}} for the Core Surveillance plot theme.
-  \code{save_a4()} is not demonstrated in \code{vignette("csstyle")}.
+\code{\link{theme_cs}} is the Core Surveillance plot theme.
+  \code{vignette("csstyle")} does not demonstrate \code{save_a4()}.
 }
