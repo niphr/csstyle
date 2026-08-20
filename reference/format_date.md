@@ -44,7 +44,7 @@ demonstrates all three functions on this page.
 format_date_as_nor()
 #> [1] "20.08.2026"
 format_datetime_as_nor()
-#> [1] "20.08.2026 kl. 15:23"
+#> [1] "20.08.2026 kl. 16:33"
 
 # Format specific dates
 format_date_as_nor(as.Date("2023-12-25"))
