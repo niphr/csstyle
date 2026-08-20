@@ -47,9 +47,9 @@ demonstrates `format_date_as_journal()` and
 ``` r
 # Format current date/time using journal conventions (ISO 8601)
 format_date_as_journal()
-#> [1] "2026-08-06"
+#> [1] "2026-08-20"
 format_datetime_as_journal()
-#> [1] "2026-08-06 09:36:50"
+#> [1] "2026-08-20 12:44:20"
 
 # Format specific dates
 format_date_as_journal(as.Date("2023-12-25"))

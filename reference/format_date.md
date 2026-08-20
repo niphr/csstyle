@@ -42,9 +42,9 @@ demonstrates all three functions on this page.
 ``` r
 # Format current date/time using Norwegian conventions
 format_date_as_nor()
-#> [1] "06.08.2026"
+#> [1] "20.08.2026"
 format_datetime_as_nor()
-#> [1] "06.08.2026 kl. 09:50"
+#> [1] "20.08.2026 kl. 12:20"
 
 # Format specific dates
 format_date_as_nor(as.Date("2023-12-25"))
