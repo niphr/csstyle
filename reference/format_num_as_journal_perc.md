@@ -48,7 +48,7 @@ Other csstyle_journal_formatters:
 # Format percentages
 format_num_as_journal_perc_0(c(12.34, 56.78, NA))
 #> [1] "12%" "57%" "NA" 
-format_num_as_journal_perc_1(c(12.34, 56.78, NA))  
+format_num_as_journal_perc_1(c(12.34, 56.78, NA))
 #> [1] "12.3%" "56.8%" "NA"   
 format_num_as_journal_perc_2(c(12.34, 56.78, NA))
 #> [1] "12.34%" "56.78%" "NA"    
