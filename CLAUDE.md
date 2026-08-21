@@ -92,7 +92,7 @@ pkgdown::build_site()
 
 ## Package Dependencies
 
-**Core dependencies**: data.table, ggplot2, glue, magrittr, rstudioapi, stringr, csdata
+**Core dependencies**: data.table, ggplot2, glue, ragg, rstudioapi, stringr, csdata, lubridate
 
 ## Important Notes
 
