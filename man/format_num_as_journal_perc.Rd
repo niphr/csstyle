@@ -32,7 +32,7 @@ Formats numeric values as percentages with journal conventions and 2 decimal pla
 \examples{
 # Format percentages
 format_num_as_journal_perc_0(c(12.34, 56.78, NA))
-format_num_as_journal_perc_1(c(12.34, 56.78, NA))  
+format_num_as_journal_perc_1(c(12.34, 56.78, NA))
 format_num_as_journal_perc_2(c(12.34, 56.78, NA))
 }
 \seealso{

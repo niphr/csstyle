@@ -1,6 +1,6 @@
 Package: csstyle
 Title: Standardizing Outputs in the 'Core Surveillance' Style
-Version: 2026.8.6
+Version: 2026.8.21
 Authors@R:
     c(
       person(
@@ -42,7 +42,6 @@ Encoding: UTF-8
 Imports: data.table,
     ggplot2,
     glue,
-    magrittr,
     ragg,
     rstudioapi,
     stringr,

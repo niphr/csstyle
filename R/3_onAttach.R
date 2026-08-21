@@ -1,5 +1,4 @@
 #' @import data.table ggplot2
-#' @importFrom magrittr %>%
 #' @noRd
 .onAttach <- function(libname, pkgname) {
   version <- tryCatch(

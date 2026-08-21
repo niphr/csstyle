@@ -111,7 +111,7 @@ print.github_code <- function(x, ...) {
     }
   }
 
-  max_width <- log(max_lines, base = 10) %>%
+  max_width <- log(max_lines, base = 10) |>
     floor() +
     1
   for (i in lines) {
